@@ -20,7 +20,7 @@ function BottomCta() {
           <h1 className="text-white font-bold leading-tight text-[30px]">
             क्या आप अपने बिज़नेस के लिए थोक में सामान ढूंढ रहे हैं?
           </h1>
-          <p className="text-gray-300 text-[15px] lg:text-[20px]">
+          <p className="text-gray-300 text-[16px] lg:text-[20px]">
             थोक ख़रीदारी अब आसान, किफ़ायती दाम और प्राथमिक सहायता।
           </p>
           <button className="mt-2 bg-white text-gray-800 font-medium px-10 py-3 rounded-md hover:bg-gray-100 cursor-pointer">

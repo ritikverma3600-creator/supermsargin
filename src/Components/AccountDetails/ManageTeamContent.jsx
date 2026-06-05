@@ -15,26 +15,26 @@ function ManageTeamContent() {
       {/* ADD NEW */}
       <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
         <span className="text-[#1a1456] text-[24px] font-light">+</span>
-        <span className="text-[#1a1456] font-medium text-[17px]">Add New Member</span>
+        <span className="text-[#1a1456] font-medium text-[18px]">Add New Member</span>
       </div>
 
       {/* CURRENT MEMBERS */}
       <div>
-        <h3 className="font-bold text-[#1a1456] text-[17px] mb-4">Currents Team Member</h3>
-        <table className="w-full text-[12px]">
+        <h3 className="font-bold text-[#1a1456] text-[18px] mb-4">Currents Team Member</h3>
+        <table className="w-full text-[14px]">
           <thead>
             <tr className="bg-gray-50">
               <th className="text-left px-4 py-3 text-gray-600 font-medium">
-                <div className="flex items-center gap-1">Name <span className="text-gray-400 text-xs">⇅</span></div>
+                <div className="flex items-center gap-1">Name <span className="text-gray-400 text-[12px]">⇅</span></div>
               </th>
               <th className="text-left px-4 py-3 text-gray-600 font-medium">
-                <div className="flex items-center gap-1">Contact <span className="text-gray-400 text-xs">⇅</span></div>
+                <div className="flex items-center gap-1">Contact <span className="text-gray-400 text-[12px]">⇅</span></div>
               </th>
               <th className="text-left px-4 py-3 text-gray-600 font-medium">
-                <div className="flex items-center gap-1">Email <span className="text-gray-400 text-xs">⇅</span></div>
+                <div className="flex items-center gap-1">Email <span className="text-gray-400 text-[12px]">⇅</span></div>
               </th>
               <th className="text-left px-4 py-3 text-gray-600 font-medium">
-                <div className="flex items-center gap-1">Role <span className="text-gray-400 text-xs">⇅</span></div>
+                <div className="flex items-center gap-1">Role <span className="text-gray-400 text-[12px]">⇅</span></div>
               </th>
               <th className="text-left px-4 py-3 text-gray-600 font-medium">Action</th>
             </tr>

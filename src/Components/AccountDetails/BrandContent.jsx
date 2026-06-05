@@ -14,20 +14,20 @@ function BrandContent() {
       {/* ADD NEW */}
       <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
         <span className="text-[#1a1456] text-[24px] font-light">+</span>
-        <span className="text-[#1a1456] font-medium text-[17px]">Add New Brand</span>
+        <span className="text-[#1a1456] font-medium text-[18px]">Add New Brand</span>
       </div>
 
       {/* CURRENT BRANDS */}
       <div>
-        <h3 className="font-bold text-[#1a1456] text-[17px] mb-4">Currents Brands</h3>
-        <table className="w-full text-[12px]">
+        <h3 className="font-bold text-[#1a1456] text-[18px] mb-4">Currents Brands</h3>
+        <table className="w-full text-[14px]">
           <thead>
             <tr className="bg-gray-50">
               {["Brand ID", "Brand Name", "Trademark", "Category", "Action"].map((col) => (
                 <th key={col} className="text-left px-4 py-3 text-gray-600 font-medium">
                   <div className="flex items-center gap-1">
                     {col}
-                    {col !== "Action" && <span className="text-gray-400 text-xs">⇅</span>}
+                    {col !== "Action" && <span className="text-gray-400 text-[12px]">⇅</span>}
                   </div>
                 </th>
               ))}

@@ -52,9 +52,9 @@ function Testimonials() {
         <div className="flex-1 bg-white rounded-xl shadow-sm p-8 flex gap-4">
           <div className="w-1 bg-red-500 rounded-full flex-shrink-0" />
           <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-gray-800 text-[17px]">{t.name}</h3>
-            <p className="text-gray-400 text-[12px]">{t.role}</p>
-            <p className="text-gray-500 text-[15px] leading-relaxed mt-2">{t.text}</p>
+            <h3 className="font-bold text-gray-800 text-[18px]">{t.name}</h3>
+            <p className="text-gray-400 text-[14px]">{t.role}</p>
+            <p className="text-gray-500 text-[16px] leading-relaxed mt-2">{t.text}</p>
           </div>
         </div>
 

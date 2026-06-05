@@ -17,7 +17,7 @@ function LanguageContent() {
     <div className="flex flex-col gap-4">
       <div>
         <h2 className="font-bold text-[#1a1456] text-[24px]">Select Language</h2>
-        <p className="text-gray-500 text-[12px] mt-1">Select The Language You Prefer For Browsing, Shopping</p>
+        <p className="text-gray-500 text-[14px] mt-1">Select The Language You Prefer For Browsing, Shopping</p>
       </div>
 
       {/* LANGUAGE OPTIONS */}
@@ -32,7 +32,7 @@ function LanguageContent() {
                 onChange={() => setSelected(lang.code)}
                 className="w-5 h-5 accent-[#1a1456]"
               />
-              <span className="text-gray-700 text-[12px]">{lang.label}</span>
+              <span className="text-gray-700 text-[14px]">{lang.label}</span>
             </label>
             {index === 0 && <hr className="border-gray-200 w-72" />}
           </div>

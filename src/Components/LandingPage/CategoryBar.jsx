@@ -21,14 +21,14 @@ const [showMeet, setShowMeet] = useState(false);
 
     <FaBars className="text-[20px]" />
 
-    <span className="font-medium text-[17px]">
+    <span className="font-medium text-[18px]">
       Categories
     </span>
 
   </div>
 
   {/* CENTER */}
-  <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-12 text-[15px]">
+  <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-12 text-[16px]">
 
     <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/sellwithus")}>
 
@@ -57,7 +57,7 @@ const [showMeet, setShowMeet] = useState(false);
   </div>
 
   {/* RIGHT */}
-  <div className="ml-auto flex items-center gap-10 text-[15px]">
+  <div className="ml-auto flex items-center gap-10 text-[16px]">
 
     <div className="flex items-center gap-2 cursor-pointer">
 

@@ -9,7 +9,7 @@ function Footer() {
         {/* COL 1 — LOGO */}
         <div className="flex flex-col items-center lg:items-start gap-3 max-w-[200px]">
           <img src={logoImage} alt="Logo" className="w-40 object-contain" />
-          <p className="text-red-500 font-semibold text-[12px] text-center lg:text-left">
+          <p className="text-red-500 font-semibold text-[14px] text-center lg:text-left">
             Supermargin is a registered brand of Cost price stores Pvt. Ltd.
           </p>
           <hr className="w-full border-gray-300" />
@@ -19,7 +19,7 @@ function Footer() {
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-gray-800 border-b-2 border-red-500 pb-1 w-fit">Quick Links</h3>
           {["About us", "Sell with us", "Agent sign up", "Contact us", "Work with us", "FAQ"].map((link) => (
-            <a key={link} href="#" className="text-gray-500 text-[12px] hover:text-[#1a1456]">{link}</a>
+            <a key={link} href="#" className="text-gray-500 text-[14px] hover:text-[#1a1456]">{link}</a>
           ))}
         </div>
 
@@ -27,7 +27,7 @@ function Footer() {
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-gray-800 border-b-2 border-red-500 pb-1 w-fit">Policies</h3>
           {["Shipping Policy", "Return Policy", "General T&C", "Free Sample Policy", "Privacy Policy"].map((link) => (
-            <a key={link} href="#" className="text-gray-500 text-[12px] hover:text-[#1a1456]">{link}</a>
+            <a key={link} href="#" className="text-gray-500 text-[14px] hover:text-[#1a1456]">{link}</a>
           ))}
           {/* PARTNER LOGOS */}
           <div className="flex items-center gap-3 mt-4">
@@ -40,13 +40,13 @@ function Footer() {
         {/* COL 4 — CONNECT */}
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-gray-800 border-b-2 border-red-500 pb-1 w-fit">Connect with us</h3>
-          <div className="flex items-center gap-3 text-gray-500 text-[12px]">
+          <div className="flex items-center gap-3 text-gray-500 text-[14px]">
             <FaPhone className="text-gray-400" />
             <span>India</span>
             <span>+91 9289001476</span>
           </div>
           <hr className="border-gray-300" />
-          <div className="flex items-start gap-3 text-[12px]">
+          <div className="flex items-start gap-3 text-[14px]">
             <FaEnvelope className="text-gray-400 mt-1 flex-shrink-0" />
             <div className="flex flex-col gap-1">
               <a href="mailto:Support@supermargins.com" className="text-[#1a1456] hover:underline">Support@supermargins.com</a>

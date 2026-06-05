@@ -83,7 +83,7 @@ function CategoriesMenu({ onClose }) {
                 handleMainClick(cat);
                 location("/category");
             }}
-            className={`px-6 py-3 cursor-pointer text-[12px] transition-colors ${
+            className={`px-6 py-3 cursor-pointer text-[14px] transition-colors ${
               activeMain === cat
                 ? "font-bold text-gray-900 bg-gray-50"
                 : "text-gray-600 hover:bg-gray-50"
@@ -101,7 +101,7 @@ function CategoriesMenu({ onClose }) {
             key={sub}
             onMouseEnter={() => setActiveSub(sub)}
             onClick={() => setActiveSub(sub)}
-            className={`px-6 py-3 cursor-pointer text-[12px] transition-colors ${
+            className={`px-6 py-3 cursor-pointer text-[14px] transition-colors ${
               activeSub === sub
                 ? "font-bold text-gray-900 underline"
                 : "text-gray-600 hover:bg-gray-50"
@@ -125,12 +125,12 @@ function CategoriesMenu({ onClose }) {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-200"
                   />
                 </div>
-                <span className="text-xs text-gray-600 text-center">{item.label}</span>
+                <span className="text-[12px] text-gray-600 text-center">{item.label}</span>
               </div>
             ))}
           </div>
         ) : (
-          <div className="flex items-center justify-center h-full text-gray-400 text-[12px]">
+          <div className="flex items-center justify-center h-full text-gray-400 text-[14px]">
             No items available
           </div>
         )}
@@ -139,13 +139,13 @@ function CategoriesMenu({ onClose }) {
       {/* CLOSE BUTTON */}
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-red-500 text-[17px] hover:text-red-700"
+        className="absolute top-4 right-4 text-red-500 text-[18px] hover:text-red-700"
       >
         <FaTimes />
       </button>
 
       {/* VIEW ALL */}
-      <button className="absolute bottom-4 right-4 bg-[#1a1456] text-white px-6 py-2 rounded-md text-[12px] font-medium hover:bg-[#2a2466]">
+      <button className="absolute bottom-4 right-4 bg-[#1a1456] text-white px-6 py-2 rounded-md text-[14px] font-medium hover:bg-[#2a2466]">
         View All
       </button>
 

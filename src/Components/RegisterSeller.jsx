@@ -13,11 +13,11 @@ const slides = [
 function FloatingInput({ label, required, type = "text", prefix }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2 flex items-center gap-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">
         {label}{required && <span className="text-red-500">*</span>}
       </span>
-      {prefix && <span className="text-gray-500 text-[12px]">{prefix}</span>}
-      <input type={type} className="flex-1 outline-none text-[12px] text-gray-700" />
+      {prefix && <span className="text-gray-500 text-[14px]">{prefix}</span>}
+      <input type={type} className="flex-1 outline-none text-[14px] text-gray-700" />
     </div>
   );
 }
@@ -26,13 +26,13 @@ function FileInput({ label, required }) {
   return (
     <div>
       <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2 flex items-center justify-between">
-        <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">
+        <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">
           {label}{required && <span className="text-red-500">*</span>}
         </span>
-        <span className="text-gray-400 text-[12px]">No File Chosen</span>
+        <span className="text-gray-400 text-[14px]">No File Chosen</span>
         <FaUpload className="text-[#1a1456]" />
       </div>
-      <p className="text-xs text-gray-400 mt-1">Max size 1MB pdf, jpg, jpeg, png</p>
+      <p className="text-[12px] text-gray-400 mt-1">Max size 1MB pdf, jpg, jpeg, png</p>
     </div>
   );
 }
@@ -53,7 +53,7 @@ function RegisterSeller() {
       {/* HEADING */}
       <div className="text-center py-8">
         <h1 className="font-bold text-gray-800">One platform. Many trusted solution.</h1>
-        <p className="text-gray-500 text-[17px] mt-1">Accelerate growth for your business today</p>
+        <p className="text-gray-500 text-[18px] mt-1">Accelerate growth for your business today</p>
       </div>
 
       {/* MAIN CONTENT */}
@@ -90,7 +90,7 @@ function RegisterSeller() {
           <h2 className="text-center font-bold text-[#1a1456] text-[20px]">Register as a Buyer</h2>
 
           {/* INFO BOX */}
-          <div className="bg-[#eef2f7] rounded-md px-4 py-3 text-center text-[12px] text-gray-500">
+          <div className="bg-[#eef2f7] rounded-md px-4 py-3 text-center text-[14px] text-gray-500">
             Please share your mobile number for business verification. Your number is safe with us.
             We guarantee no spam calls. Your Mobile Number would be used as your login ID.
           </div>
@@ -100,8 +100,8 @@ function RegisterSeller() {
             <h3 className="font-bold text-gray-800 mb-4">Business Details</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2 flex items-center justify-between">
-                <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">Pan Number<span className="text-red-500">*</span></span>
-                <input type="text" className="flex-1 outline-none text-[12px]" />
+                <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">Pan Number<span className="text-red-500">*</span></span>
+                <input type="text" className="flex-1 outline-none text-[14px]" />
                 <FaCheckCircle className="text-green-500" />
               </div>
               <FileInput label="Upload Pan" required />
@@ -109,8 +109,8 @@ function RegisterSeller() {
               <FileInput label="Upload GST" required />
               <FloatingInput label="Company / Business Name" required />
               <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2">
-                <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">Legal Entity Type<span className="text-red-500">*</span></span>
-                <select className="w-full outline-none text-[12px] text-gray-700 bg-transparent">
+                <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">Legal Entity Type<span className="text-red-500">*</span></span>
+                <select className="w-full outline-none text-[14px] text-gray-700 bg-transparent">
                   <option value="">Select</option>
                   <option>Proprietorship</option>
                   <option>Partnership</option>
@@ -130,10 +130,10 @@ function RegisterSeller() {
               <FloatingInput label="Contact Person" required />
               <FloatingInput label="Email" required type="email" />
               <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2 flex items-center gap-2">
-                <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">Mobile Number<span className="text-red-500">*</span></span>
-                <span className="text-gray-500 text-[12px]">+91</span>
+                <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">Mobile Number<span className="text-red-500">*</span></span>
+                <span className="text-gray-500 text-[14px]">+91</span>
                 <span className="text-gray-300">|</span>
-                <input type="tel" className="flex-1 outline-none text-[12px]" />
+                <input type="tel" className="flex-1 outline-none text-[14px]" />
                 <FaCheckCircle className="text-green-500" />
               </div>
               <FloatingInput label="Password" required type="password" />
@@ -152,7 +152,7 @@ function RegisterSeller() {
                 <div className="flex-1">
                   <FloatingInput label="Swift / IFSC" required />
                 </div>
-                <button className="bg-[#1a1456] text-white px-5 py-3 rounded-md text-[12px] font-medium hover:bg-[#2a2466] flex-shrink-0">
+                <button className="bg-[#1a1456] text-white px-5 py-3 rounded-md text-[14px] font-medium hover:bg-[#2a2466] flex-shrink-0">
                   Verify
                 </button>
               </div>
@@ -172,11 +172,11 @@ function RegisterSeller() {
                 <FileInput label="Address Proof" required />
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-[12px] text-gray-600">Do You Own A Brand?</span>
-                <label className="flex items-center gap-1 text-[12px] cursor-pointer">
+                <span className="text-[14px] text-gray-600">Do You Own A Brand?</span>
+                <label className="flex items-center gap-1 text-[14px] cursor-pointer">
                   <input type="radio" name="brand" checked={ownsBrand} onChange={() => setOwnsBrand(true)} /> Yes
                 </label>
-                <label className="flex items-center gap-1 text-[12px] cursor-pointer">
+                <label className="flex items-center gap-1 text-[14px] cursor-pointer">
                   <input type="radio" name="brand" checked={!ownsBrand} onChange={() => setOwnsBrand(false)} /> NO
                 </label>
               </div>
@@ -190,20 +190,20 @@ function RegisterSeller() {
           {/* CAPTCHA */}
           <div>
             <h3 className="font-bold text-gray-800 mb-1">Confirm Humanity</h3>
-            <p className="text-gray-500 text-[12px] mb-3">Before we onboard you, we need to confirm you are a human.</p>
+            <p className="text-gray-500 text-[14px] mb-3">Before we onboard you, we need to confirm you are a human.</p>
             <div className="border border-gray-300 rounded-md p-4 flex items-center gap-3 w-fit">
               <input type="checkbox" className="w-4 h-4" />
-              <span className="text-[12px] text-gray-600">I'm not a robot</span>
+              <span className="text-[14px] text-gray-600">I'm not a robot</span>
               <div className="ml-4 text-right">
-                <div className="text-xs text-gray-400">reCAPTCHA</div>
-                <div className="text-xs text-gray-300">Privacy - Terms</div>
+                <div className="text-[12px] text-gray-400">reCAPTCHA</div>
+                <div className="text-[12px] text-gray-300">Privacy - Terms</div>
               </div>
             </div>
           </div>
 
           {/* TERMS + BUTTONS */}
           <div className="flex flex-col gap-4">
-            <label className="flex items-center gap-2 text-[12px] text-gray-600 cursor-pointer">
+            <label className="flex items-center gap-2 text-[14px] text-gray-600 cursor-pointer">
               <input type="checkbox" checked={agreed} onChange={() => setAgreed(!agreed)} className="w-4 h-4 accent-[#1a1456]" />
               I agree to the <a href="#" className="text-[#1a1456] underline">Terms & Conditions</a>
             </label>

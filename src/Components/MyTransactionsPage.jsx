@@ -10,7 +10,7 @@ function MyTransactionsPage() {
 
         <h2 className="font-bold text-gray-800 text-[20px] mb-6">My Transactions</h2>
 
-        <table className="w-full text-[12px]">
+        <table className="w-full text-[14px]">
           <thead>
             <tr className="border-b border-gray-200">
               {[
@@ -27,7 +27,7 @@ function MyTransactionsPage() {
                 <th key={col.label} className="text-left px-4 py-3 text-gray-700 font-bold whitespace-nowrap">
                   <div className="flex items-center gap-1">
                     {col.label}
-                    {col.sort && <span className="text-gray-400 text-xs">⇅</span>}
+                    {col.sort && <span className="text-gray-400 text-[12px]">⇅</span>}
                   </div>
                 </th>
               ))}

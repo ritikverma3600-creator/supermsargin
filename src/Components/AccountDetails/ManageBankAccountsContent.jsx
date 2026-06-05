@@ -1,15 +1,15 @@
 function FloatingInput({ label, required, value, prefix }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">
         {label}{required && <span className="text-red-500">*</span>}
       </span>
       <div className="flex items-center gap-1">
-        {prefix && <span className="text-gray-500 text-[12px]">{prefix}</span>}
+        {prefix && <span className="text-gray-500 text-[14px]">{prefix}</span>}
         <input
           type="text"
           defaultValue={value}
-          className="w-full outline-none text-[12px] text-gray-700 bg-transparent"
+          className="w-full outline-none text-[14px] text-gray-700 bg-transparent"
         />
       </div>
     </div>
@@ -19,8 +19,8 @@ function FloatingInput({ label, required, value, prefix }) {
 function FloatingSelect({ label, value }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">{label}</span>
-      <select className="w-full outline-none text-[12px] text-gray-700 bg-transparent">
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">{label}</span>
+      <select className="w-full outline-none text-[14px] text-gray-700 bg-transparent">
         <option>{value}</option>
       </select>
     </div>
@@ -58,7 +58,7 @@ function ManageBankAccountsContent() {
 
       {/* TABLE */}
       <div className="border border-gray-200 rounded-lg overflow-hidden mt-4">
-        <table className="w-full text-[12px]">
+        <table className="w-full text-[14px]">
           <thead>
             <tr className="border-b border-gray-200">
               <th className="text-left px-4 py-3 text-gray-600 font-medium">ID</th>
@@ -82,7 +82,7 @@ function ManageBankAccountsContent() {
                 <td className="px-4 py-3 text-gray-600">{acc.accountNo}</td>
                 <td className="px-4 py-3 text-gray-600">{acc.city}</td>
                 <td className="px-4 py-3">
-                  <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-md">{acc.status}</span>
+                  <span className="bg-green-600 text-white text-[12px] px-3 py-1 rounded-md">{acc.status}</span>
                 </td>
               </tr>
             ))}

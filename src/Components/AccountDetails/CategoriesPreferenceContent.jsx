@@ -27,7 +27,7 @@ function CategoriesPreferenceContent() {
             onChange={toggleAll}
             className="w-5 h-5 accent-[#1a1456]"
           />
-          <span className="text-gray-600 text-[12px]">Select All Categories</span>
+          <span className="text-gray-600 text-[14px]">Select All Categories</span>
         </label>
         <hr className="border-gray-200 w-48" />
       </div>
@@ -42,7 +42,7 @@ function CategoriesPreferenceContent() {
               onChange={() => toggleOne(cat)}
               className="w-5 h-5 accent-[#1a1456]"
             />
-            <span className="text-gray-600 text-[12px]">{cat}</span>
+            <span className="text-gray-600 text-[14px]">{cat}</span>
           </label>
         ))}
       </div>

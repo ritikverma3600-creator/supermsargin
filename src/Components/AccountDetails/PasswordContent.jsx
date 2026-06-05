@@ -7,15 +7,15 @@ function PasswordContent() {
 
   const PasswordInput = ({ label, field }) => (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">{label}</span>
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">{label}</span>
       <div className="flex items-center gap-2">
         <input
           type={show[field] ? "text" : "password"}
           defaultValue="*******"
-          className="flex-1 outline-none text-[12px] text-gray-700"
+          className="flex-1 outline-none text-[14px] text-gray-700"
         />
         <button onClick={() => setShow((s) => ({ ...s, [field]: !s[field] }))}>
-          <FaEye className="text-gray-400 text-[12px]" />
+          <FaEye className="text-gray-400 text-[14px]" />
         </button>
       </div>
     </div>

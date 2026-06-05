@@ -40,13 +40,13 @@ function FilterSection({ title, items, type = "checkbox" }) {
   return (
     <div className="border-b border-gray-200 py-3 pt-[136px]">
       <div className="flex items-center justify-between cursor-pointer mb-2" onClick={() => setOpen(!open)}>
-        <span className="font-bold text-gray-700 text-[12px]">{title}</span>
-        {open ? <FaChevronUp className="text-xs text-gray-400" /> : <FaChevronDown className="text-xs text-gray-400" />}
+        <span className="font-bold text-gray-700 text-[14px]">{title}</span>
+        {open ? <FaChevronUp className="text-[12px] text-gray-400" /> : <FaChevronDown className="text-[12px] text-gray-400" />}
       </div>
       {open && (
         <div className="flex flex-col gap-2">
           {items.map((item) => (
-            <label key={item} className="flex items-center gap-2 text-xs text-gray-600 cursor-pointer">
+            <label key={item} className="flex items-center gap-2 text-[12px] text-gray-600 cursor-pointer">
               <input
                 type="checkbox"
                 checked={checked.includes(item)}
@@ -77,7 +77,7 @@ function CategoryItems() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`flex-1 text-center whitespace-nowrap cursor-pointer gap-2 px-5 py-2 rounded-md text-[12px] font-medium border transition-colors ${
+              className={`flex-1 text-center whitespace-nowrap cursor-pointer gap-2 px-5 py-2 rounded-md text-[14px] font-medium border transition-colors ${
                 activeCategory === cat
                   ? "bg-[#0a5d93] text-white border-[#1a1456]"
                   : "text-gray-600 border-gray-200 bg-white hover:border-[#1a1456] hover:text-[#1a1456]"
@@ -98,8 +98,8 @@ function CategoryItems() {
         />
         <div className="relative z-10 p-8 flex flex-col gap-3">
           <h2 className="text-white font-bold text-[24px] lg:text-[30px]">Apparel & Fashion</h2>
-          <p className="text-gray-300 text-[12px]">Wholesale clothing and fashion accessories for retailers across India</p>
-          <div className="flex items-center gap-6 text-gray-300 text-xs">
+          <p className="text-gray-300 text-[14px]">Wholesale clothing and fashion accessories for retailers across India</p>
+          <div className="flex items-center gap-6 text-gray-300 text-[12px]">
             <span>🛍 50,000+ Products</span>
             <span>👥 2,500+ Suppliers</span>
             <span>🚚 Pan India Delivery</span>
@@ -115,10 +115,10 @@ function CategoryItems() {
         {/* SIDEBAR */}
         <div className="w-[280px] flex-shrink-0 bg-white rounded-xl p-4 self-start sticky top-24">
           <div className="border-l-4 border-[#1a1456] pl-3 mb-3">
-            <span className="font-bold text-gray-700 text-[12px]">SHOP BY CATEGORY</span>
+            <span className="font-bold text-gray-700 text-[14px]">SHOP BY CATEGORY</span>
           </div>
           {shopByCategory.map((item) => (
-            <div key={item} className="flex items-center gap-2 py-2 border-b border-gray-100 text-[12px] text-gray-600 cursor-pointer hover:text-[#1a1456]">
+            <div key={item} className="flex items-center gap-2 py-2 border-b border-gray-100 text-[14px] text-gray-600 cursor-pointer hover:text-[#1a1456]">
               <span className="w-1.5 h-1.5 bg-gray-400 rounded-full" />
               {item}
             </div>
@@ -132,14 +132,14 @@ function CategoryItems() {
         <div className="flex-1 flex flex-col gap-6">
       {/* BREADCRUMB + SORT */}
       <div className="flex items-center justify-between px-6 lg:px-10 py-4">
-        <div className="flex items-center gap-2 text-[12px] text-gray-500">
+        <div className="flex items-center gap-2 text-[14px] text-gray-500">
           <span className="text-[#1a1456] cursor-pointer">All</span>
-          <FaChevronRight className="text-xs" />
+          <FaChevronRight className="text-[12px]" />
           <span className="font-medium text-gray-700 border-b border-gray-400">Apparel</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-[12px] text-gray-600">Sort By</span>
-          <select className="border border-gray-300 rounded-md px-3 py-2 text-[12px] outline-none text-gray-700">
+          <span className="text-[14px] text-gray-600">Sort By</span>
+          <select className="border border-gray-300 rounded-md px-3 py-2 text-[14px] outline-none text-gray-700">
             <option>Best Match</option>
             <option>Price: Low to High</option>
             <option>Price: High to Low</option>
@@ -153,18 +153,18 @@ function CategoryItems() {
               <div key={product.id} className="bg-white rounded-xl overflow-hidden shadow-sm">
                 <img src={product.image} alt={product.name} className="w-full h-56 object-cover" />
                 <div className="p-4 flex flex-col gap-2">
-                  <h3 className="font-bold text-gray-800 text-[15px]">{product.name}</h3>
-                  <p className="text-gray-500 text-[12px]">{product.desc}</p>
+                  <h3 className="font-bold text-gray-800 text-[16px]">{product.name}</h3>
+                  <p className="text-gray-500 text-[14px]">{product.desc}</p>
                   <div className="flex items-center justify-between mt-1">
-                    <span className="font-bold text-[#1a1456] text-[15px]">{product.price}</span>
-                    <span className="text-gray-400 text-xs">{product.min}</span>
+                    <span className="font-bold text-[#1a1456] text-[16px]">{product.price}</span>
+                    <span className="text-gray-400 text-[12px]">{product.min}</span>
                   </div>
                   <div className="flex gap-2 mt-2">
-                    <button className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[12px] hover:bg-[#2a2466]">
-                      <FaShoppingCart className="text-xs" /> Add to cart
+                    <button className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[14px] hover:bg-[#2a2466]">
+                      <FaShoppingCart className="text-[12px]" /> Add to cart
                     </button>
-                    <button className="flex-1 flex items-center justify-center gap-2 border border-gray-300 text-gray-700 py-2 rounded-md text-[12px] hover:bg-gray-50">
-                      <FaCommentDots className="text-xs" /> Add to Chat
+                    <button className="flex-1 flex items-center justify-center gap-2 border border-gray-300 text-gray-700 py-2 rounded-md text-[14px] hover:bg-gray-50">
+                      <FaCommentDots className="text-[12px]" /> Add to Chat
                     </button>
                   </div>
                 </div>
@@ -178,13 +178,13 @@ function CategoryItems() {
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:bg-gray-100"
             >
-              <FaChevronLeft className="text-xs" />
+              <FaChevronLeft className="text-[12px]" />
             </button>
             {[1, 2, 3].map((p) => (
               <button
                 key={p}
                 onClick={() => setCurrentPage(p)}
-                className={`w-10 h-10 rounded-full text-[12px] font-medium ${
+                className={`w-10 h-10 rounded-full text-[14px] font-medium ${
                   currentPage === p ? "bg-[#1a1456] text-white" : "border border-gray-300 text-gray-600 hover:bg-gray-100"
                 }`}
               >
@@ -194,7 +194,7 @@ function CategoryItems() {
             <span className="text-gray-400">...</span>
             <button
               onClick={() => setCurrentPage(totalPages)}
-              className={`w-10 h-10 rounded-full text-[12px] font-medium ${
+              className={`w-10 h-10 rounded-full text-[14px] font-medium ${
                 currentPage === totalPages ? "bg-[#1a1456] text-white" : "border border-gray-300 text-gray-600 hover:bg-gray-100"
               }`}
             >
@@ -204,7 +204,7 @@ function CategoryItems() {
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:bg-gray-100"
             >
-              <FaChevronRight className="text-xs" />
+              <FaChevronRight className="text-[12px]" />
             </button>
           </div>
 
@@ -214,7 +214,7 @@ function CategoryItems() {
               <div key={promo.label} className="relative rounded-xl overflow-hidden cursor-pointer group h-48">
                 <img src={promo.image} alt={promo.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-black/40" />
-                <span className="absolute bottom-4 left-4 text-white font-bold text-[17px] leading-tight">{promo.label}</span>
+                <span className="absolute bottom-4 left-4 text-white font-bold text-[18px] leading-tight">{promo.label}</span>
               </div>
             ))}
           </div>

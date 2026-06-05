@@ -18,20 +18,20 @@ function UploadKYCContent() {
 
             {/* INPUT */}
             <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-              <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">{doc.label}</span>
+              <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">{doc.label}</span>
               <input
                 type="text"
                 defaultValue={doc.value}
-                className="w-full outline-none text-[12px] text-gray-700"
+                className="w-full outline-none text-[14px] text-gray-700"
               />
             </div>
 
             {/* UPLOAD */}
             <div className="flex items-center gap-3 cursor-pointer hover:opacity-80">
               <div className="w-10 h-10 rounded-full border-2 border-[#1a1456] flex items-center justify-center flex-shrink-0">
-                <FaUpload className="text-[#1a1456] text-[12px]" />
+                <FaUpload className="text-[#1a1456] text-[14px]" />
               </div>
-              <span className="text-gray-400 text-[12px]">Upload or drag and dro JPEG, PNG, JPG</span>
+              <span className="text-gray-400 text-[14px]">Upload or drag and dro JPEG, PNG, JPG</span>
             </div>
 
           </div>

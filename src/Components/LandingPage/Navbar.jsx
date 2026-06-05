@@ -47,7 +47,7 @@ function Navbar() {
       <input
         type="text"
         placeholder="Search for Product, Brand and More"
-        className="flex-1 h-full px-3 outline-none text-[12px] md:text-[17px]"
+        className="flex-1 h-full px-3 outline-none text-[14px] md:text-[18px]"
       />
       <div className="px-4 cursor-pointer text-gray-600">
         <FaSearch />
@@ -63,7 +63,7 @@ function Navbar() {
           className="w-6 h-4"
         />
         <span>English</span>
-        <FaChevronDown className="text-xs" />
+        <FaChevronDown className="text-[12px]" />
       </div>
       <div onClick={() => setShowSignIn(true)} className="flex items-center gap-2 cursor-pointer">
         <FaRegUserCircle className="text-[20px]" />

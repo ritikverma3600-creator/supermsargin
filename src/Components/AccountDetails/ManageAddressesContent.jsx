@@ -18,7 +18,7 @@ function ManageAddressesContent() {
       {/* ADD NEW */}
       <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
         <span className="text-[#1a1456] text-[24px] font-light">+</span>
-        <span className="text-[#1a1456] font-medium text-[17px]">Add New Address</span>
+        <span className="text-[#1a1456] font-medium text-[18px]">Add New Address</span>
       </div>
 
       {/* ADDRESS LIST */}
@@ -27,23 +27,23 @@ function ManageAddressesContent() {
 
           {/* TAGS */}
           <div className="flex items-center gap-2 mb-3">
-            <span className="border border-gray-300 text-gray-500 text-xs px-3 py-1 rounded-md">
+            <span className="border border-gray-300 text-gray-500 text-[12px] px-3 py-1 rounded-md">
               Shipping & Billing
             </span>
-            <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-md">
+            <span className="bg-green-600 text-white text-[12px] px-3 py-1 rounded-md">
               Active
             </span>
           </div>
 
           {/* NAME + PHONE */}
-          <p className="text-gray-800 text-[12px] mb-1">
+          <p className="text-gray-800 text-[14px] mb-1">
             <span className="font-bold">{addr.name}</span>
             {"  "}
             <span className="text-gray-500">{addr.phone}</span>
           </p>
 
           {/* ADDRESS */}
-          <p className="text-gray-600 text-[12px]">
+          <p className="text-gray-600 text-[14px]">
             {addr.address}
             <br />
             {addr.state} (<span className="font-bold">{addr.pincode}</span>), {addr.country}

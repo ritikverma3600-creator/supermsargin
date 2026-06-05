@@ -29,7 +29,7 @@ function JoinBanner() {
               बनिए आम आदमी से <br />
               एक सफल बिज़नेसमैन
             </h1>
-            <p className="text-gray-200 text-[15px] lg:text-[24px]">
+            <p className="text-gray-200 text-[16px] lg:text-[24px]">
               सुपरमार्जिन से थोक में खरीदें और अच्छे प्रॉफिट मार्जिन पर बेचें
             </p>
             <button className="bg-white text-gray-800 font-2xl px-8 py-3 rounded-md hover:bg-gray-100 w-fit cursor-pointer">

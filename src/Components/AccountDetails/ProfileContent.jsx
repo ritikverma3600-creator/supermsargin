@@ -16,15 +16,15 @@ const menuItems = [
 function FloatingInput({ label, required, value, prefix }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">
         {label}{required && <span className="text-red-500">*</span>}
       </span>
       <div className="flex items-center gap-1">
-        {prefix && <span className="text-gray-500 text-[12px]">{prefix}</span>}
+        {prefix && <span className="text-gray-500 text-[14px]">{prefix}</span>}
         <input
           type="text"
           defaultValue={value}
-          className="w-full outline-none text-[12px] text-gray-700 bg-transparent"
+          className="w-full outline-none text-[14px] text-gray-700 bg-transparent"
         />
       </div>
     </div>
@@ -34,8 +34,8 @@ function FloatingInput({ label, required, value, prefix }) {
 function FloatingSelect({ label, value }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
-      <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">{label}</span>
-      <select className="w-full outline-none text-[12px] text-gray-700 bg-transparent">
+      <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">{label}</span>
+      <select className="w-full outline-none text-[14px] text-gray-700 bg-transparent">
         <option>{value}</option>
       </select>
     </div>
@@ -54,7 +54,7 @@ function ProfileContent() {
         />
         <div>
           <h2 className="font-bold text-[#1a1456] text-[24px]">Mahesh Kumar</h2>
-          <p className="text-gray-400 text-[12px]">(ID: BLK7845)</p>
+          <p className="text-gray-400 text-[14px]">(ID: BLK7845)</p>
         </div>
       </div>
       <FloatingInput label="Company/Business Name" required value="Your business name" />
@@ -69,12 +69,12 @@ function ProfileContent() {
         <FloatingSelect label="City" value="Haryana" />
       </div>
       <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-3">
-        <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">Profile Image</span>
+        <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">Profile Image</span>
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-[#eef2f7] flex items-center justify-center flex-shrink-0">
-            <FaUpload className="text-[#1a1456] text-[12px]" />
+            <FaUpload className="text-[#1a1456] text-[14px]" />
           </div>
-          <span className="text-gray-400 text-[12px]">Upload or drag and dro JPEG, PNG, JPG</span>
+          <span className="text-gray-400 text-[14px]">Upload or drag and dro JPEG, PNG, JPG</span>
         </div>
       </div>
       <div>

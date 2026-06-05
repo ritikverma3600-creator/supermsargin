@@ -23,13 +23,13 @@ function MyOrdersPage() {
       {/* SIDEBAR FILTERS */}
       <div className="w-[220px] flex-shrink-0 bg-white border-r border-gray-200 p-5">
         <h2 className="font-bold text-[#1a1456] text-[20px] mb-4">Order History</h2>
-        <h3 className="font-bold text-gray-700 text-[12px] mb-3">Filters</h3>
+        <h3 className="font-bold text-gray-700 text-[14px] mb-3">Filters</h3>
 
         {/* ORDER STATUS */}
         <div className="mb-4">
-          <p className="text-gray-600 text-[12px] font-medium mb-2">Order Status</p>
+          <p className="text-gray-600 text-[14px] font-medium mb-2">Order Status</p>
           {["All Orders", "In Progress", "On the way", "Delivered"].map((s) => (
-            <label key={s} className="flex items-center gap-2 py-1 cursor-pointer text-[12px] text-gray-600">
+            <label key={s} className="flex items-center gap-2 py-1 cursor-pointer text-[14px] text-gray-600">
               <input type="checkbox" checked={statusFilters.includes(s)} onChange={() => toggleStatus(s)} className="accent-[#1a1456]" />
               {s}
             </label>
@@ -38,9 +38,9 @@ function MyOrdersPage() {
 
         {/* ORDER TIME */}
         <div>
-          <p className="text-gray-600 text-[12px] font-medium mb-2">Order Time</p>
+          <p className="text-gray-600 text-[14px] font-medium mb-2">Order Time</p>
           {["Last 30 days", "2024", "2023"].map((t) => (
-            <label key={t} className="flex items-center gap-2 py-1 cursor-pointer text-[12px] text-gray-600">
+            <label key={t} className="flex items-center gap-2 py-1 cursor-pointer text-[14px] text-gray-600">
               <input type="checkbox" checked={timeFilters.includes(t)} onChange={() => toggleTime(t)} className="accent-[#1a1456]" />
               {t}
             </label>
@@ -54,10 +54,10 @@ function MyOrdersPage() {
         {/* SEARCH + DOWNLOAD */}
         <div className="flex items-center gap-4">
           <div className="flex-1 flex items-center border border-gray-300 rounded-md bg-white px-4 h-11 gap-2">
-            <input type="text" placeholder="Search your order here" className="flex-1 outline-none text-[12px] text-gray-600" />
+            <input type="text" placeholder="Search your order here" className="flex-1 outline-none text-[14px] text-gray-600" />
             <FaSearch className="text-gray-400" />
           </div>
-          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[12px] font-medium hover:bg-[#2a2466] whitespace-nowrap">
+          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[14px] font-medium hover:bg-[#2a2466] whitespace-nowrap">
             Download Selected
           </button>
         </div>
@@ -66,11 +66,11 @@ function MyOrdersPage() {
         <div className="bg-white rounded-t-lg">
           <div className="grid grid-cols-[40px_1fr_1fr_1fr_1fr_1fr] px-4 py-3 border-b border-gray-200">
             <input type="checkbox" checked={selectAll} onChange={() => setSelectAll(!selectAll)} className="accent-[#1a1456] w-4 h-4" />
-            <span className="text-[12px] font-bold text-gray-700">Order Number</span>
-            <span className="text-[12px] font-bold text-gray-700">Order Placed</span>
-            <span className="text-[12px] font-bold text-gray-700">Order Status</span>
-            <span className="text-[12px] font-bold text-gray-700">Links & Documents</span>
-            <span className="text-[12px] font-bold text-gray-700 text-right">Order Amount<br />(Inc GST)</span>
+            <span className="text-[14px] font-bold text-gray-700">Order Number</span>
+            <span className="text-[14px] font-bold text-gray-700">Order Placed</span>
+            <span className="text-[14px] font-bold text-gray-700">Order Status</span>
+            <span className="text-[14px] font-bold text-gray-700">Links & Documents</span>
+            <span className="text-[14px] font-bold text-gray-700 text-right">Order Amount<br />(Inc GST)</span>
           </div>
         </div>
 
@@ -86,13 +86,13 @@ function MyOrdersPage() {
                   onChange={() => toggleSelect(index)}
                   className="accent-[#1a1456] w-4 h-4"
                 />
-                <span className="font-bold text-gray-800 text-[12px]">{order.id}</span>
-                <span className="font-bold text-gray-800 text-[12px]">{order.date}</span>
-                <span className="font-bold text-gray-800 text-[12px]">{order.status}</span>
-                <a href="#" className="text-[#1a1456] text-[12px] underline">View Tracking</a>
+                <span className="font-bold text-gray-800 text-[14px]">{order.id}</span>
+                <span className="font-bold text-gray-800 text-[14px]">{order.date}</span>
+                <span className="font-bold text-gray-800 text-[14px]">{order.status}</span>
+                <a href="#" className="text-[#1a1456] text-[14px] underline">View Tracking</a>
                 <div className="flex items-center justify-end gap-2">
-                  <span className="font-bold text-gray-800 text-[12px]">Total-INR {order.amount}</span>
-                  <FaChevronDown className="text-gray-500 text-xs" />
+                  <span className="font-bold text-gray-800 text-[14px]">Total-INR {order.amount}</span>
+                  <FaChevronDown className="text-gray-500 text-[12px]" />
                 </div>
               </div>
 
@@ -102,22 +102,22 @@ function MyOrdersPage() {
                 <div className="flex items-center gap-3">
                   <img src={order.image} alt={order.item} className="w-10 h-10 object-cover rounded" />
                   <div>
-                    <p className="text-[12px] text-gray-600">{order.item}</p>
-                    <p className="text-[#1a1456] text-xs font-medium">+{order.moreItems} More Items</p>
+                    <p className="text-[14px] text-gray-600">{order.item}</p>
+                    <p className="text-[#1a1456] text-[12px] font-medium">+{order.moreItems} More Items</p>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-[#1a1456] text-white text-xs px-4 py-2 rounded-md hover:bg-[#2a2466]">
+                  <button className="bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
                     Shop from this order
                   </button>
                 </div>
-                <span className="font-bold text-gray-700 text-[12px]">Logistics Docs</span>
+                <span className="font-bold text-gray-700 text-[14px]">Logistics Docs</span>
                 <div className="flex flex-col gap-1">
-                  <a href="#" className="text-[#1a1456] text-xs underline">Packing List</a>
-                  <a href="#" className="text-[#1a1456] text-xs underline">e -Way Bill</a>
+                  <a href="#" className="text-[#1a1456] text-[12px] underline">Packing List</a>
+                  <a href="#" className="text-[#1a1456] text-[12px] underline">e -Way Bill</a>
                 </div>
                 <div className="flex justify-end">
-                  <button className="bg-[#1a1456] text-white text-xs px-4 py-2 rounded-md hover:bg-[#2a2466]">
+                  <button className="bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
                     Download Invoice
                   </button>
                 </div>

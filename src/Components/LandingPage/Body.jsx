@@ -38,10 +38,10 @@ function Body() {
 
         {/* BUTTONS */}
         <div className="flex items-center gap-4 mt-2 cursor-pointer" >
-          <button onClick={() => navigate("/register")} className="bg-[#1a1456] text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-[#2a2466]">
+          <button onClick={() => navigate("/register")} className="bg-[#1a1456] text-white px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-[#2a2466]">
             Sign up to buy
           </button>
-          <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-gray-50">
+          <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-gray-50">
             <span className="text-red-500 text-[20px]">▶</span>
             Watch Demo
           </button>

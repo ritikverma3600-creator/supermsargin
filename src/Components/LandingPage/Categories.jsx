@@ -24,10 +24,10 @@ function Categories() {
 
             {/* BOTTOM BAR */}
             <div className="absolute bottom-0 left-0 right-0 bg-[#2e2d7a] bg-opacity-100 flex items-center justify-between px-5 py-4">
-              <span className="text-white font-bold text-[12px] tracking-wide">
+              <span className="text-white font-bold text-[14px] tracking-wide">
                 {cat.label}
               </span>
-              <button className="bg-white text-gray-800 text-[12px] font-medium px-5 py-2 rounded-sm hover:bg-gray-100">
+              <button className="bg-white text-gray-800 text-[14px] font-medium px-5 py-2 rounded-sm hover:bg-gray-100">
                 Shop Now
               </button>
             </div>

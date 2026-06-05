@@ -17,7 +17,7 @@ function PromoGrid() {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-black/40" />
-            <span className="absolute bottom-4 left-4 text-white font-bold text-[17px] leading-tight">
+            <span className="absolute bottom-4 left-4 text-white font-bold text-[18px] leading-tight">
               {promo.label}
             </span>
           </div>
