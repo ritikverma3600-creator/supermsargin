@@ -34,28 +34,28 @@ function LetsMeetModal({ onClose }) {
         <div className="w-[280px] flex-shrink-0 border-r border-gray-200 p-6 flex flex-col gap-4">
           <img src={logoImage} alt="Logo" className="w-36 object-contain" />
           <div>
-            <p className="text-gray-500 text-sm">Support Team</p>
-            <h3 className="font-bold text-gray-800 text-xl">Supermargins Meeting</h3>
+            <p className="text-gray-500 text-[12px]">Support Team</p>
+            <h3 className="font-bold text-gray-800 text-[20px]">Supermargins Meeting</h3>
           </div>
           <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2 text-gray-600 text-sm">
+            <div className="flex items-center gap-2 text-gray-600 text-[12px]">
               <FaClock className="text-gray-400" />
               <span>30 min</span>
             </div>
-            <div className="flex items-start gap-2 text-gray-600 text-sm">
+            <div className="flex items-start gap-2 text-gray-600 text-[12px]">
               <FaVideo className="text-gray-400 mt-0.5 flex-shrink-0" />
               <span>Web conferencing details provided upon confirmation.</span>
             </div>
           </div>
-          <p className="text-gray-700 text-sm font-medium leading-relaxed">
+          <p className="text-gray-700 text-[12px] font-medium leading-relaxed">
             Hello thanks for your interests in supermargins, your factory direct gateway to wholesale shopping. we look forward to meeting you soon.
           </p>
-          <button className="text-[#1a1456] text-sm underline mt-auto">Cookie settings</button>
+          <button className="text-[#1a1456] text-[12px] underline mt-auto">Cookie settings</button>
         </div>
 
         {/* RIGHT PANEL — CALENDAR */}
         <div className="flex-1 p-6 flex flex-col gap-4">
-          <h3 className="font-bold text-gray-800 text-lg">Select a Date & Time</h3>
+          <h3 className="font-bold text-gray-800 text-[17px]">Select a Date & Time</h3>
 
           {/* MONTH NAV */}
           <div className="flex items-center justify-between mb-2">
@@ -91,7 +91,7 @@ function LetsMeetModal({ onClose }) {
                   <button
                     onClick={() => isAvailable && setSelectedDay(day)}
                     disabled={!isAvailable}
-                    className={`w-9 h-9 rounded-full text-sm font-medium transition-colors relative
+                    className={`w-9 h-9 rounded-full text-[12px] font-medium transition-colors relative
                       ${isSelected ? "bg-[#1a1456] text-white" : ""}
                       ${isAvailable && !isSelected ? "text-[#1a1456] hover:bg-blue-50" : ""}
                       ${!isAvailable ? "text-gray-300 cursor-default" : ""}
@@ -108,11 +108,11 @@ function LetsMeetModal({ onClose }) {
           </div>
 
           {/* TIMEZONE */}
-          <div className="flex items-center gap-2 mt-2 text-gray-500 text-sm">
+          <div className="flex items-center gap-2 mt-2 text-gray-500 text-[12px]">
             <FaGlobe className="text-gray-400" />
             <span>Time zone</span>
           </div>
-          <div className="flex items-center gap-2 text-gray-600 text-sm">
+          <div className="flex items-center gap-2 text-gray-600 text-[12px]">
             <FaGlobe className="text-gray-400" />
             <span>India Standard Time (1:59pm) ▾</span>
           </div>

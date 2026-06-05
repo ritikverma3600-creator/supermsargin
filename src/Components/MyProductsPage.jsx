@@ -29,14 +29,14 @@ function MyProductsPage() {
 
         {/* HEADER */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
-          <h2 className="font-bold text-[#1a1456] text-xl">My Products</h2>
-          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-[#2a2466]">
+          <h2 className="font-bold text-[#1a1456] text-[20px]">My Products</h2>
+          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[12px] font-medium hover:bg-[#2a2466]">
             Move to cart
           </button>
         </div>
 
         {/* TABLE */}
-        <table className="w-full text-sm">
+        <table className="w-full text-[12px]">
           <thead>
             <tr className="border-b border-gray-200">
               <th className="px-4 py-3 w-10">
@@ -76,17 +76,17 @@ function MyProductsPage() {
                 <td className="px-4 py-4 text-gray-700">{product.compliance}</td>
                 <td className="px-4 py-4 text-gray-700">{product.color}</td>
                 <td className="px-4 py-4">
-                  <input type="text" className="border border-gray-300 rounded px-2 py-1 w-24 text-sm outline-none" />
+                  <input type="text" className="border border-gray-300 rounded px-2 py-1 w-24 text-[12px] outline-none" />
                 </td>
                 <td className="px-4 py-4">
-                  <input type="text" className="border border-gray-300 rounded px-2 py-1 w-24 text-sm outline-none" />
+                  <input type="text" className="border border-gray-300 rounded px-2 py-1 w-24 text-[12px] outline-none" />
                 </td>
                 <td className="px-4 py-4 text-gray-700">₹{product.price}.00</td>
                 <td className="px-4 py-4">
                   <div className="flex items-center gap-2">
-                    <button onClick={() => updateQty(product.id, -1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-lg hover:bg-[#2a2466]">−</button>
-                    <span className="w-10 text-center text-sm font-medium">{product.quantity}</span>
-                    <button onClick={() => updateQty(product.id, 1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-lg hover:bg-[#2a2466]">+</button>
+                    <button onClick={() => updateQty(product.id, -1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-[17px] hover:bg-[#2a2466]">−</button>
+                    <span className="w-10 text-center text-[12px] font-medium">{product.quantity}</span>
+                    <button onClick={() => updateQty(product.id, 1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-[17px] hover:bg-[#2a2466]">+</button>
                     <a href="#" className="text-[#1a1456] text-xs underline ml-1">View</a>
                   </div>
                 </td>
@@ -104,12 +104,12 @@ function MyProductsPage() {
           <FaChevronLeft className="text-xs" />
         </button>
         {[1, 2, 3].map((p) => (
-          <button key={p} onClick={() => setCurrentPage(p)} className={`w-10 h-10 rounded-full text-sm font-medium ${currentPage === p ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
+          <button key={p} onClick={() => setCurrentPage(p)} className={`w-10 h-10 rounded-full text-[12px] font-medium ${currentPage === p ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
             {p}
           </button>
         ))}
         <span className="text-gray-400">...</span>
-        <button onClick={() => setCurrentPage(totalPages)} className={`w-10 h-10 rounded-full text-sm font-medium ${currentPage === totalPages ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
+        <button onClick={() => setCurrentPage(totalPages)} className={`w-10 h-10 rounded-full text-[12px] font-medium ${currentPage === totalPages ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
           {totalPages}
         </button>
         <button onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))} className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-100">

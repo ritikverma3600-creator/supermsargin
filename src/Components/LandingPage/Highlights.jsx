@@ -9,7 +9,7 @@ function Highlights() {
     <section className="w-full bg-[#f0f0f5] py-10 px-12">
 
       {/* TITLE */}
-      <h1 className="text-center font-bold text-[#1a1456] mb-8 text-4xl">
+      <h1 className="text-center font-bold text-[#1a1456] mb-8 text-[36px]">
         Marketplace Highlights
       </h1>
 
@@ -21,7 +21,7 @@ function Highlights() {
             className="flex flex-col items-center flex-1  pt-6 border-t border-gray-600"
           >
             <span
-              className="text-3xl md:text-8xl font-light"
+              className="text-[30px] md:text-8xl font-light"
               style={{
                 background: "linear-gradient(to right, #3b3bff, #cc3bcc)",
                 WebkitBackgroundClip: "text",
@@ -30,7 +30,7 @@ function Highlights() {
             >
               {stat.value}
             </span>
-            <span className="text-gray-600 text-xl md:text-3xl mt-3">{stat.label}</span>
+            <span className="text-gray-600 text-[20px] md:text-[30px] mt-3">{stat.label}</span>
           </div>
         ))}
       </div>

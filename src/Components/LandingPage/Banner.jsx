@@ -16,12 +16,12 @@ function Banner() {
       {/* TEXT CONTENT */}
       <div className="absolute inset-0 flex flex-col justify-center px-8 lg:px-30 max-w-3xl gap-3">
 
-        <h1 className="text-white text-4xl font-bold leading-relaxed">
+        <h1 className="text-white text-[36px] font-bold leading-relaxed">
           थोक खरीद की हर ज़रूरत का
           समाधान, अब एक ही प्लेटफ़ॉर्म पर
         </h1>
 
-        <p className="text-gray-200 text-2xl lg:text-2xl leading-relaxed">
+        <p className="text-gray-200 text-[24px] lg:text-[24px] leading-relaxed">
           चुने हुए थोक प्रोडक्ट्स, सही दाम, समय पर स्टॉक अपडेट और
           भरोसेमंद डिलीवरी के साथ।
         </p>

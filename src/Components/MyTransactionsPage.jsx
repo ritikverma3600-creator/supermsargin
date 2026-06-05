@@ -8,9 +8,9 @@ function MyTransactionsPage() {
     <div className="w-full bg-[#eef2f7] min-h-screen pb-6">
       <div className="bg-white rounded-b-xl p-6 mx-10">
 
-        <h2 className="font-bold text-gray-800 text-xl mb-6">My Transactions</h2>
+        <h2 className="font-bold text-gray-800 text-[20px] mb-6">My Transactions</h2>
 
-        <table className="w-full text-sm">
+        <table className="w-full text-[12px]">
           <thead>
             <tr className="border-b border-gray-200">
               {[

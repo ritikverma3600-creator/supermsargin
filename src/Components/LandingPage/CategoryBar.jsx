@@ -19,20 +19,20 @@ const [showMeet, setShowMeet] = useState(false);
   {/* LEFT */}
   <div onClick={() => setShowCategories(!showCategories)} className="flex items-center gap-3 cursor-pointer">
 
-    <FaBars className="text-xl" />
+    <FaBars className="text-[20px]" />
 
-    <span className="font-medium text-lg">
+    <span className="font-medium text-[17px]">
       Categories
     </span>
 
   </div>
 
   {/* CENTER */}
-  <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-12 text-base">
+  <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-12 text-[15px]">
 
     <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/sellwithus")}>
 
-      <MdOutlineMail className="text-xl" />
+      <MdOutlineMail className="text-[20px]" />
 
       <span>Sell With Us</span>
 
@@ -40,7 +40,7 @@ const [showMeet, setShowMeet] = useState(false);
 
     <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/requestquote")}>
 
-      <MdOutlineMail className="text-xl" />
+      <MdOutlineMail className="text-[20px]" />
 
       <span>Request a Quote</span>
 
@@ -48,7 +48,7 @@ const [showMeet, setShowMeet] = useState(false);
 
     <div className="flex items-center gap-2 cursor-pointer" onClick={() => setShowMeet(true)}>
 
-      <FaRegCalendarAlt className="text-xl" />
+      <FaRegCalendarAlt className="text-[20px]" />
 
       <span>Let’s Meet</span>
 
@@ -57,11 +57,11 @@ const [showMeet, setShowMeet] = useState(false);
   </div>
 
   {/* RIGHT */}
-  <div className="ml-auto flex items-center gap-10 text-base">
+  <div className="ml-auto flex items-center gap-10 text-[15px]">
 
     <div className="flex items-center gap-2 cursor-pointer">
 
-      <FaUsers className="text-xl" />
+      <FaUsers className="text-[20px]" />
 
       <span>About Us</span>
 
@@ -69,7 +69,7 @@ const [showMeet, setShowMeet] = useState(false);
 
     <div className="flex items-center gap-2 cursor-pointer">
 
-      <MdSupportAgent className="text-xl" />
+      <MdSupportAgent className="text-[20px]" />
 
       <span>Support</span>
 

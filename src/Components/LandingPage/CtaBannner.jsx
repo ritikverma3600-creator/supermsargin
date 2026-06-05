@@ -14,10 +14,10 @@ function CtaBanner() {
 
         {/* TEXT OVERLAY */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center px-6">
-          <h2 className="text-white font-bold text-2xl lg:text-3xl">
+          <h2 className="text-white font-bold text-[24px] lg:text-[30px]">
             तेज़ और आसान थोक सप्लाई के साथ बढ़ाएँ अपना बिज़नेस।
           </h2>
-          <p className="text-white text-base lg:text-lg">
+          <p className="text-white text-[15px] lg:text-[17px]">
             ₹99 में किफ़ायती थोक प्रोडक्ट्स देखें।
           </p>
           <button className="mt-2 bg-white text-gray-800 font-medium px-8 py-3 rounded-md hover:bg-gray-100 cursor-pointer">

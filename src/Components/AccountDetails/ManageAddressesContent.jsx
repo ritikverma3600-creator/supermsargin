@@ -13,12 +13,12 @@ function ManageAddressesContent() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Addresses Details</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Addresses Details</h2>
 
       {/* ADD NEW */}
       <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
-        <span className="text-[#1a1456] text-2xl font-light">+</span>
-        <span className="text-[#1a1456] font-medium text-lg">Add New Address</span>
+        <span className="text-[#1a1456] text-[24px] font-light">+</span>
+        <span className="text-[#1a1456] font-medium text-[17px]">Add New Address</span>
       </div>
 
       {/* ADDRESS LIST */}
@@ -36,14 +36,14 @@ function ManageAddressesContent() {
           </div>
 
           {/* NAME + PHONE */}
-          <p className="text-gray-800 text-sm mb-1">
+          <p className="text-gray-800 text-[12px] mb-1">
             <span className="font-bold">{addr.name}</span>
             {"  "}
             <span className="text-gray-500">{addr.phone}</span>
           </p>
 
           {/* ADDRESS */}
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-[12px]">
             {addr.address}
             <br />
             {addr.state} (<span className="font-bold">{addr.pincode}</span>), {addr.country}

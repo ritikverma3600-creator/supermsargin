@@ -25,11 +25,11 @@ function JoinBanner() {
 
           {/* TEXT */}
           <div className="flex flex-col gap-4 pb-8 px-12  lg:pb-0">
-            <h1 className="text-6xl text-white font-bold leading-tight">
+            <h1 className="text-[60px] text-white font-bold leading-tight">
               बनिए आम आदमी से <br />
               एक सफल बिज़नेसमैन
             </h1>
-            <p className="text-gray-200 text-base lg:text-2xl">
+            <p className="text-gray-200 text-[15px] lg:text-[24px]">
               सुपरमार्जिन से थोक में खरीदें और अच्छे प्रॉफिट मार्जिन पर बेचें
             </p>
             <button className="bg-white text-gray-800 font-2xl px-8 py-3 rounded-md hover:bg-gray-100 w-fit cursor-pointer">

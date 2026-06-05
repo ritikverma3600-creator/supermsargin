@@ -22,19 +22,19 @@ function LiveDeals() {
 
       {/* TOP BADGE */}
       <div className="flex justify-center mb-4">
-        <span className="flex items-center gap-2 bg-red-500 text-white px-5 py-2 rounded-full text-sm font-medium">
+        <span className="flex items-center gap-2 bg-red-500 text-white px-5 py-2 rounded-full text-[12px] font-medium">
           <FaTag />
           Live Deals
         </span>
       </div>
 
       {/* TITLE */}
-      <h2 className="text-center font-bold text-[#1a1456] text-3xl lg:text-4xl mb-4">
+      <h2 className="text-center font-bold text-[#1a1456] text-[30px] lg:text-[36px] mb-4">
         Products Under INR 99.00
       </h2>
 
       {/* SUBTITLE */}
-      <p className="text-center text-gray-500 text-base  mx-auto mb-11">
+      <p className="text-center text-gray-500 text-[15px]  mx-auto mb-11">
         Discover amazing wholesale prices on quality apparel, toys, home decor,<br/>
         and accessories. Perfect for retailers looking to maximize profit margins.
       </p>
@@ -45,7 +45,7 @@ function LiveDeals() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`whitespace-nowrap px-5 py-3 rounded-md text-sm font-medium transition-colors ${
+            className={`whitespace-nowrap px-5 py-3 rounded-md text-[12px] font-medium transition-colors ${
               activeCategory === cat
                 ? "bg-[#1a1456] text-white"
                 : "text-gray-600 hover:text-[#1a1456]"
@@ -67,13 +67,13 @@ function LiveDeals() {
               </span>
             </div>
             <div className="p-4 flex flex-col gap-2">
-              <h3 className="font-bold text-gray-800 text-base">{product.name}</h3>
-              <p className="text-gray-500 text-sm">{product.desc}</p>
+              <h3 className="font-bold text-gray-800 text-[15px]">{product.name}</h3>
+              <p className="text-gray-500 text-[12px]">{product.desc}</p>
               <div className="flex items-center justify-between mt-1">
-                <span className="font-bold text-[#1a1456] text-base">{product.price}</span>
+                <span className="font-bold text-[#1a1456] text-[15px]">{product.price}</span>
                 <span className="text-gray-400 text-xs">{product.min}</span>
               </div>
-              <button className="mt-2 bg-[#1a1456] text-white py-2 rounded-md text-sm font-medium hover:bg-[#2a2466] cursor-pointer">
+              <button className="mt-2 bg-[#1a1456] text-white py-2 rounded-md text-[12px] font-medium hover:bg-[#2a2466] cursor-pointer">
                 Shop Now
               </button>
             </div>

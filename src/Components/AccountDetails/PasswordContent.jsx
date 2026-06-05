@@ -12,10 +12,10 @@ function PasswordContent() {
         <input
           type={show[field] ? "text" : "password"}
           defaultValue="*******"
-          className="flex-1 outline-none text-sm text-gray-700"
+          className="flex-1 outline-none text-[12px] text-gray-700"
         />
         <button onClick={() => setShow((s) => ({ ...s, [field]: !s[field] }))}>
-          <FaEye className="text-gray-400 text-sm" />
+          <FaEye className="text-gray-400 text-[12px]" />
         </button>
       </div>
     </div>
@@ -23,7 +23,7 @@ function PasswordContent() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Change/Update Password</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Change/Update Password</h2>
       <div className="max-w-sm">
         <PasswordInput label="Old Password*" field="old" />
       </div>

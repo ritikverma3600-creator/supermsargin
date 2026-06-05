@@ -39,9 +39,9 @@ function AccountPage() {
               activeMenu === item.label ? "bg-gray-50" : "hover:bg-gray-50"
             }`}
           >
-            <item.icon className="text-gray-500 text-lg flex-shrink-0" />
+            <item.icon className="text-gray-500 text-[17px] flex-shrink-0" />
             <div>
-              <p className="font-medium text-gray-800 text-sm">{item.label}</p>
+              <p className="font-medium text-gray-800 text-[12px]">{item.label}</p>
               <p className="text-gray-400 text-xs">{item.desc}</p>
             </div>
           </div>

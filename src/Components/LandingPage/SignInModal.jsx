@@ -11,26 +11,26 @@ function SignInModal({ onClose }) {
       <div className="bg-white rounded-xl w-full max-w-md p-8 relative">
 
         {/* CLOSE */}
-        <button onClick={onClose} className="absolute top-4 right-4 text-red-500 text-xl cursor-pointer">
+        <button onClick={onClose} className="absolute top-4 right-4 text-red-500 text-[20px] cursor-pointer">
           <FaTimes />
         </button>
 
         {/* TITLE */}
         <div className="mb-6">
-          <h2 className="font-bold text-gray-800 text-xl border-b-2 border-gray-800 pb-2 w-fit">
+          <h2 className="font-bold text-gray-800 text-[20px] border-b-2 border-gray-800 pb-2 w-fit">
             Buyer Sign In
           </h2>
-          <p className="text-gray-500 text-sm mt-3">Welcome back! Please sign in to your account</p>
+          <p className="text-gray-500 text-[12px] mt-3">Welcome back! Please sign in to your account</p>
         </div>
 
         {/* EMAIL */}
         <div className="flex flex-col gap-1 mb-4">
-          <label className="text-sm text-gray-700">Email<span className="text-red-500">*</span></label>
+          <label className="text-[12px] text-gray-700">Email<span className="text-red-500">*</span></label>
           <div className="flex items-center border border-gray-300 rounded-md px-3 h-12">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 outline-none text-sm text-gray-600"
+              className="flex-1 outline-none text-[12px] text-gray-600"
             />
             <FaEnvelope className="text-gray-400" />
           </div>
@@ -38,12 +38,12 @@ function SignInModal({ onClose }) {
 
         {/* PASSWORD */}
         <div className="flex flex-col gap-1 mb-2">
-          <label className="text-sm text-gray-700">Password<span className="text-red-500">*</span></label>
+          <label className="text-[12px] text-gray-700">Password<span className="text-red-500">*</span></label>
           <div className="flex items-center border border-gray-300 rounded-md px-3 h-12">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className="flex-1 outline-none text-sm text-gray-600"
+              className="flex-1 outline-none text-[12px] text-gray-600"
             />
             <button onClick={() => setShowPassword(!showPassword)}>
               <FaEyeSlash className="text-gray-400" />
@@ -53,7 +53,7 @@ function SignInModal({ onClose }) {
 
         {/* FORGOT PASSWORD */}
         <div className="flex justify-end mb-6">
-          <a href="#" className="text-[#1a1456] text-sm hover:underline">Forgot Password?</a>
+          <a href="#" className="text-[#1a1456] text-[12px] hover:underline">Forgot Password?</a>
         </div>
 
         {/* LOGIN BUTTON */}
@@ -62,7 +62,7 @@ function SignInModal({ onClose }) {
         </button>
 
         {/* CREATE ACCOUNT */}
-        <p className="text-gray-500 text-sm mb-2">Do not have an account?</p>
+        <p className="text-gray-500 text-[12px] mb-2">Do not have an account?</p>
         <button onClick={() => navigate("/register")} className="w-full bg-gray-100 text-gray-800 py-3 rounded-md font-medium hover:bg-gray-200 mb-4 cursor-pointer">
           Create Account
         </button>

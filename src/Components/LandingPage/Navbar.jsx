@@ -24,7 +24,7 @@ function Navbar() {
   <div className="max-w-7xl mx-auto h-20 flex items-center gap-4">
 
     {/* HAMBURGER */}
-    <div className="md:hidden text-xl cursor-pointer">
+    <div className="md:hidden text-[20px] cursor-pointer">
       <FaBars />
     </div>
 
@@ -47,7 +47,7 @@ function Navbar() {
       <input
         type="text"
         placeholder="Search for Product, Brand and More"
-        className="flex-1 h-full px-3 outline-none text-sm md:text-lg"
+        className="flex-1 h-full px-3 outline-none text-[12px] md:text-[17px]"
       />
       <div className="px-4 cursor-pointer text-gray-600">
         <FaSearch />
@@ -66,7 +66,7 @@ function Navbar() {
         <FaChevronDown className="text-xs" />
       </div>
       <div onClick={() => setShowSignIn(true)} className="flex items-center gap-2 cursor-pointer">
-        <FaRegUserCircle className="text-xl" />
+        <FaRegUserCircle className="text-[20px]" />
         <span>Sign In</span>
       </div>
       <button className="bg-orange-400 hover:bg-orange-500 text-white px-5 py-2 rounded-md cursor-pointer" onClick={() => navigate("/register")}>

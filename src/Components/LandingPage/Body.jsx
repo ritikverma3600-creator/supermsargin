@@ -13,7 +13,7 @@ function Body() {
         
         {/* HEADING */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1a1456] leading-tight">
+          <h1 className="text-[36px] md:text-[48px] font-bold text-[#1a1456] leading-tight">
             Selected{" "}
             <span className="relative inline-block">
               Wholesale 
@@ -31,18 +31,18 @@ function Body() {
         </div>
 
         {/* SUBTEXT */}
-        <p className="text-gray-500 text-3xl leading-relaxed">
+        <p className="text-gray-500 text-[30px] leading-relaxed">
           Every business need fulfilled, with the right <br />
           products, trusted names, and fast delivery
         </p>
 
         {/* BUTTONS */}
         <div className="flex items-center gap-4 mt-2 cursor-pointer" >
-          <button onClick={() => navigate("/register")} className="bg-[#1a1456] text-white px-8 py-3 rounded-sm text-base font-medium hover:bg-[#2a2466]">
+          <button onClick={() => navigate("/register")} className="bg-[#1a1456] text-white px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-[#2a2466]">
             Sign up to buy
           </button>
-          <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-base font-medium hover:bg-gray-50">
-            <span className="text-red-500 text-xl">▶</span>
+          <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-[15px] font-medium hover:bg-gray-50">
+            <span className="text-red-500 text-[20px]">▶</span>
             Watch Demo
           </button>
         </div>

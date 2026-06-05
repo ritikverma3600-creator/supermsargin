@@ -18,7 +18,7 @@ function DashboardNav() {
 
       {/* HAMBURGER */}
       
-      <FaBars className="text-gray-600 text-lg cursor-pointer flex-shrink-0" />
+      <FaBars className="text-gray-600 text-[17px] cursor-pointer flex-shrink-0" />
 
       {/* NAV ITEMS */}
       <div className="flex overflow-x-auto gap-4 border-b w-full p-2">

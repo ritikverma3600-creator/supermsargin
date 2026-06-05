@@ -16,7 +16,7 @@ function CategoriesPreferenceContent() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Select Preferred Categories</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Select Preferred Categories</h2>
 
       {/* SELECT ALL */}
       <div className="flex flex-col gap-2">
@@ -27,7 +27,7 @@ function CategoriesPreferenceContent() {
             onChange={toggleAll}
             className="w-5 h-5 accent-[#1a1456]"
           />
-          <span className="text-gray-600 text-sm">Select All Categories</span>
+          <span className="text-gray-600 text-[12px]">Select All Categories</span>
         </label>
         <hr className="border-gray-200 w-48" />
       </div>
@@ -42,7 +42,7 @@ function CategoriesPreferenceContent() {
               onChange={() => toggleOne(cat)}
               className="w-5 h-5 accent-[#1a1456]"
             />
-            <span className="text-gray-600 text-sm">{cat}</span>
+            <span className="text-gray-600 text-[12px]">{cat}</span>
           </label>
         ))}
       </div>

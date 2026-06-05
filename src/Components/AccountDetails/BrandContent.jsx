@@ -9,18 +9,18 @@ function BrandContent() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Add /Update Brands</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Add /Update Brands</h2>
 
       {/* ADD NEW */}
       <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
-        <span className="text-[#1a1456] text-2xl font-light">+</span>
-        <span className="text-[#1a1456] font-medium text-lg">Add New Brand</span>
+        <span className="text-[#1a1456] text-[24px] font-light">+</span>
+        <span className="text-[#1a1456] font-medium text-[17px]">Add New Brand</span>
       </div>
 
       {/* CURRENT BRANDS */}
       <div>
-        <h3 className="font-bold text-[#1a1456] text-lg mb-4">Currents Brands</h3>
-        <table className="w-full text-sm">
+        <h3 className="font-bold text-[#1a1456] text-[17px] mb-4">Currents Brands</h3>
+        <table className="w-full text-[12px]">
           <thead>
             <tr className="bg-gray-50">
               {["Brand ID", "Brand Name", "Trademark", "Category", "Action"].map((col) => (

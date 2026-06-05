@@ -8,7 +8,7 @@ function RequestQuotePage() {
     <div className="top-120 w-full bg-white min-h-screen px-6 lg:px-16 py-40">
 
       {/* TITLE */}
-      <h2 className="text-center font-bold text-gray-800 text-xl tracking-wide mb-10">
+      <h2 className="text-center font-bold text-gray-800 text-[20px] tracking-wide mb-10">
         GET A QUOTE TODAY / YOUR BRANDS
       </h2>
 
@@ -19,10 +19,10 @@ function RequestQuotePage() {
 
           {/* CATEGORY */}
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-gray-700">
+            <label className="text-[12px] text-gray-700">
               Tell us about your category / business to help us find the right match.*
             </label>
-            <select className="border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-500 outline-none">
+            <select className="border border-gray-300 rounded-md px-4 py-3 text-[12px] text-gray-500 outline-none">
               <option value="">Select Category</option>
               <option>Apparel</option>
               <option>Home Decor</option>
@@ -34,10 +34,10 @@ function RequestQuotePage() {
 
           {/* QUANTITY */}
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-gray-700">
+            <label className="text-[12px] text-gray-700">
               Please give an indication of quantities required per product (to match the right price and supplier)*
             </label>
-            <select className="border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-500 outline-none">
+            <select className="border border-gray-300 rounded-md px-4 py-3 text-[12px] text-gray-500 outline-none">
               <option value="">Select Quantity</option>
               <option>Below 50</option>
               <option>50 - 100</option>
@@ -51,23 +51,23 @@ function RequestQuotePage() {
           {/* PERSONAL DETAILS */}
           <div className="flex flex-col gap-4">
             <div>
-              <p className="font-bold text-gray-800 text-sm">Please share your details so we can respond:</p>
+              <p className="font-bold text-gray-800 text-[12px]">Please share your details so we can respond:</p>
               <p className="text-gray-500 text-xs">Your information is safe with us.</p>
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-sm text-gray-700">Your name*</label>
-              <input type="text" className="border border-gray-300 rounded-md px-4 py-3 text-sm outline-none" />
+              <label className="text-[12px] text-gray-700">Your name*</label>
+              <input type="text" className="border border-gray-300 rounded-md px-4 py-3 text-[12px] outline-none" />
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-sm text-gray-700">Email address*</label>
-              <input type="email" className="border border-gray-300 rounded-md px-4 py-3 text-sm outline-none" />
+              <label className="text-[12px] text-gray-700">Email address*</label>
+              <input type="email" className="border border-gray-300 rounded-md px-4 py-3 text-[12px] outline-none" />
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-sm text-gray-700">Phone number</label>
-              <input type="tel" className="border border-gray-300 rounded-md px-4 py-3 text-sm outline-none" />
+              <label className="text-[12px] text-gray-700">Phone number</label>
+              <input type="tel" className="border border-gray-300 rounded-md px-4 py-3 text-[12px] outline-none" />
             </div>
           </div>
 
@@ -84,15 +84,15 @@ function RequestQuotePage() {
             { label: "Add Logo*", hint: "( JPEG,PNG,JPG,PDF, FILE SIZE LESS THAN 1MB )" },
           ].map((field) => (
             <div key={field.label} className="flex flex-col gap-1">
-              <label className="text-sm text-gray-700">
+              <label className="text-[12px] text-gray-700">
                 {field.label} <span className="text-gray-400 text-xs">{field.hint}</span>
               </label>
               <div className="flex items-center border border-gray-300 rounded-md overflow-hidden">
-                <label className="bg-gray-100 border-r border-gray-300 px-4 py-3 text-sm text-gray-700 cursor-pointer hover:bg-gray-200 flex-shrink-0">
+                <label className="bg-gray-100 border-r border-gray-300 px-4 py-3 text-[12px] text-gray-700 cursor-pointer hover:bg-gray-200 flex-shrink-0">
                   Choose File
                   <input type="file" className="hidden" />
                 </label>
-                <span className="px-4 text-sm text-gray-400 flex-1">No file chosen</span>
+                <span className="px-4 text-[12px] text-gray-400 flex-1">No file chosen</span>
               </div>
             </div>
           ))}

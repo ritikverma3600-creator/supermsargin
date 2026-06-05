@@ -5,11 +5,11 @@ function FloatingInput({ label, required, value, prefix }) {
         {label}{required && <span className="text-red-500">*</span>}
       </span>
       <div className="flex items-center gap-1">
-        {prefix && <span className="text-gray-500 text-sm">{prefix}</span>}
+        {prefix && <span className="text-gray-500 text-[12px]">{prefix}</span>}
         <input
           type="text"
           defaultValue={value}
-          className="w-full outline-none text-sm text-gray-700 bg-transparent"
+          className="w-full outline-none text-[12px] text-gray-700 bg-transparent"
         />
       </div>
     </div>
@@ -20,7 +20,7 @@ function FloatingSelect({ label, value }) {
   return (
     <div className="relative border border-gray-300 rounded-md px-3 pt-5 pb-2">
       <span className="absolute -top-2.5 left-3 bg-white text-xs text-gray-500 px-1">{label}</span>
-      <select className="w-full outline-none text-sm text-gray-700 bg-transparent">
+      <select className="w-full outline-none text-[12px] text-gray-700 bg-transparent">
         <option>{value}</option>
       </select>
     </div>
@@ -33,7 +33,7 @@ function ManageBankAccountsContent() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Banking Details</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Banking Details</h2>
 
       {/* FORM */}
       <div className="flex flex-col gap-4">
@@ -58,7 +58,7 @@ function ManageBankAccountsContent() {
 
       {/* TABLE */}
       <div className="border border-gray-200 rounded-lg overflow-hidden mt-4">
-        <table className="w-full text-sm">
+        <table className="w-full text-[12px]">
           <thead>
             <tr className="border-b border-gray-200">
               <th className="text-left px-4 py-3 text-gray-600 font-medium">ID</th>

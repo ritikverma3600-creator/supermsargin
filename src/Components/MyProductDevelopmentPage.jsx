@@ -21,8 +21,8 @@ const techPacks = [
 
 function FileIcon({ type }) {
   const icons = {
-    pdf: <div className="flex flex-col items-center gap-1 cursor-pointer"><div className="w-10 h-12 bg-white border border-gray-200 rounded flex items-center justify-center"><FaFilePdf className="text-red-500 text-xl" /></div><span className="text-[#1a1456] text-xs">Download</span></div>,
-    xls: <div className="flex flex-col items-center gap-1 cursor-pointer"><div className="w-10 h-12 bg-white border border-gray-200 rounded flex items-center justify-center"><FaFileExcel className="text-green-600 text-xl" /></div><span className="text-[#1a1456] text-xs">Download</span></div>,
+    pdf: <div className="flex flex-col items-center gap-1 cursor-pointer"><div className="w-10 h-12 bg-white border border-gray-200 rounded flex items-center justify-center"><FaFilePdf className="text-red-500 text-[20px]" /></div><span className="text-[#1a1456] text-xs">Download</span></div>,
+    xls: <div className="flex flex-col items-center gap-1 cursor-pointer"><div className="w-10 h-12 bg-white border border-gray-200 rounded flex items-center justify-center"><FaFileExcel className="text-green-600 text-[20px]" /></div><span className="text-[#1a1456] text-xs">Download</span></div>,
     img: <div className="flex flex-col items-center gap-1 cursor-pointer"><div className="w-10 h-12 bg-white border border-gray-200 rounded flex items-center justify-center overflow-hidden"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80" alt="" className="w-full h-full object-cover" /></div><span className="text-[#1a1456] text-xs">Download</span></div>,
   };
   return icons[type] || null;
@@ -38,16 +38,16 @@ function MyProductDevelopmentPage() {
 
         {/* UPLOAD */}
         <div className="border border-gray-200 rounded-lg p-5 flex items-center gap-3 cursor-pointer hover:bg-gray-50">
-          <span className="text-[#1a1456] text-2xl font-light">+</span>
-          <span className="text-[#1a1456] font-medium text-lg">Upload Product Detail / Pantone/ Labels & Trims</span>
+          <span className="text-[#1a1456] text-[24px] font-light">+</span>
+          <span className="text-[#1a1456] font-medium text-[17px]">Upload Product Detail / Pantone/ Labels & Trims</span>
         </div>
 
         {/* VIEW TECH PACK */}
-        <h2 className="font-bold text-gray-800 text-xl">View Tech Pack</h2>
+        <h2 className="font-bold text-gray-800 text-[20px]">View Tech Pack</h2>
 
         {/* TABLE */}
         <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+          <table className="w-full text-[12px] border border-gray-200 rounded-lg overflow-hidden">
             <thead>
               <tr className="bg-gray-50 border-b border-gray-200">
                 {["Sno.", "Category", "Quantity", "Posted On", "Tech Packs", "Labels/Trims", "Measurement", "Pantone", "Comments", "More Details", "Remove"].map((col) => (
@@ -84,10 +84,10 @@ function MyProductDevelopmentPage() {
                   </td>
                   <td className="px-3 py-4 text-gray-600">{row.comments}</td>
                   <td className="px-3 py-4">
-                    <a href="#" className="text-[#1a1456] underline text-sm">View</a>
+                    <a href="#" className="text-[#1a1456] underline text-[12px]">View</a>
                   </td>
                   <td className="px-3 py-4">
-                    <a href="#" className="text-[#1a1456] underline text-sm">Remove</a>
+                    <a href="#" className="text-[#1a1456] underline text-[12px]">Remove</a>
                   </td>
                 </tr>
               ))}
@@ -103,12 +103,12 @@ function MyProductDevelopmentPage() {
           <FaChevronLeft className="text-xs" />
         </button>
         {[1, 2].map((p) => (
-          <button key={p} onClick={() => setCurrentPage(p)} className={`w-10 h-10 rounded-full text-sm font-medium ${currentPage === p ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
+          <button key={p} onClick={() => setCurrentPage(p)} className={`w-10 h-10 rounded-full text-[12px] font-medium ${currentPage === p ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
             {p}
           </button>
         ))}
         <span className="text-gray-400">...</span>
-        <button onClick={() => setCurrentPage(totalPages)} className={`w-10 h-10 rounded-full text-sm font-medium ${currentPage === totalPages ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
+        <button onClick={() => setCurrentPage(totalPages)} className={`w-10 h-10 rounded-full text-[12px] font-medium ${currentPage === totalPages ? "bg-[#1a1456] text-white" : "border border-gray-300 bg-white text-gray-600 hover:bg-gray-100"}`}>
           {totalPages}
         </button>
         <button onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))} className="w-10 h-10 rounded-full border border-gray-300 bg-white flex items-center justify-center text-gray-500 hover:bg-gray-100">

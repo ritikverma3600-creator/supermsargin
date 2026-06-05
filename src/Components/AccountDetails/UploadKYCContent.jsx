@@ -9,7 +9,7 @@ function UploadKYCContent() {
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="font-bold text-[#1a1456] text-2xl">Upload & Update Your KYC Docs</h2>
+      <h2 className="font-bold text-[#1a1456] text-[24px]">Upload & Update Your KYC Docs</h2>
 
       {/* ROWS */}
       <div className="flex flex-col gap-4">
@@ -22,16 +22,16 @@ function UploadKYCContent() {
               <input
                 type="text"
                 defaultValue={doc.value}
-                className="w-full outline-none text-sm text-gray-700"
+                className="w-full outline-none text-[12px] text-gray-700"
               />
             </div>
 
             {/* UPLOAD */}
             <div className="flex items-center gap-3 cursor-pointer hover:opacity-80">
               <div className="w-10 h-10 rounded-full border-2 border-[#1a1456] flex items-center justify-center flex-shrink-0">
-                <FaUpload className="text-[#1a1456] text-sm" />
+                <FaUpload className="text-[#1a1456] text-[12px]" />
               </div>
-              <span className="text-gray-400 text-sm">Upload or drag and dro JPEG, PNG, JPG</span>
+              <span className="text-gray-400 text-[12px]">Upload or drag and dro JPEG, PNG, JPG</span>
             </div>
 
           </div>
