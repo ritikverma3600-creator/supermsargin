@@ -16,6 +16,8 @@ import MyProductDevelopmentPage from './Components/MyProductDevelopmentPage'
 import MyTransactionsPage from './Components/MyTransactionsPage'
 import SellWithUs from './Components/SellWithUs'
 import RequestQuotePage from './Components/RequestQuotePage'
+import AboutUsPage from './Components/AboutUsPage'
+import SupportPage from './Components/SupportPage'
 function App() {
 
   return (
@@ -26,6 +28,10 @@ function App() {
       <Route path="/category" element={<CategoryPage />} />
       <Route path="/sellwithus" element={<SellWithUs />} />
       <Route path="/requestquote" element={<RequestQuotePage />} />
+      <Route path="/aboutus" element={<AboutUsPage />} />
+      <Route path="/support" element={<SupportPage />} />
+
+
       <Route path="/home" element={
   <Layout>
     <Home />

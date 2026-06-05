@@ -59,7 +59,7 @@ const [showMeet, setShowMeet] = useState(false);
   {/* RIGHT */}
   <div className="ml-auto flex items-center gap-10 text-[16px]">
 
-    <div className="flex items-center gap-2 cursor-pointer">
+    <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/aboutus")}>
 
       <FaUsers className="text-[20px]" />
 
@@ -67,7 +67,7 @@ const [showMeet, setShowMeet] = useState(false);
 
     </div>
 
-    <div className="flex items-center gap-2 cursor-pointer">
+    <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/support")}>
 
       <MdSupportAgent className="text-[20px]" />
 
