@@ -32,7 +32,7 @@ function PasswordContent() {
         <PasswordInput label="Confirm Password*" field="confirm" />
       </div>
       <div>
-        <button className="bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
+        <button className="cursor-pointer bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
           Confirm Password
         </button>
       </div>

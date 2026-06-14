@@ -14,7 +14,7 @@ const navItems = [
 
 function DashboardNav() {
   return (
-    <nav className="gap-2 flex mt-[90px] h-14 bg-white border-b rounded-t-lg border-gray-200 flex items-center mx-6 lg:mx-10 px-2">
+    <nav className="gap-2 flex mt-[60px] md:mt-[90px] h-14 bg-white border-b rounded-t-lg border-gray-200 flex items-center mx-6 lg:mx-10 px-2">
 
       {/* HAMBURGER */}
       

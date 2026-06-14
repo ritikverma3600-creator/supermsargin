@@ -1,6 +1,7 @@
 // BuyAgain.jsx
 import { FaShoppingCart, FaCommentDots } from "react-icons/fa";
-
+import { useState } from "react";
+import AddedToCartPopup from "./Cart/AddedToCartPopup";
 const buyAgainProducts = [
   { id: 1, name: "Cotton white Shirt Lined", desc: "Comfortable cotton Shirt, Colors", price: "INR 99.00", min: "Min: 50 pcs", image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400" },
   { id: 2, name: "Gray Formal Shirt", desc: "Comfortable cotton tee, Colors", price: "INR 109.00", min: "Min: 50 pcs", image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400" },
@@ -9,7 +10,10 @@ const buyAgainProducts = [
 ];
 
 function BuyAgain() {
+    const [showPopup, setShowPopup] = useState(false);
+ 
   return (
+    <>
     <section className="w-full bg-white px-6 lg:px-10 py-10">
       <h2 className="text-center font-bold text-[#1a1456] text-[30px] mb-8">Buy Again</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -24,7 +28,7 @@ function BuyAgain() {
                 <span className="text-gray-400 text-[12px]">{product.min}</span>
               </div>
               <div className="flex gap-2 mt-2">
-                <button className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[14px] hover:bg-[#2a2466]">
+                <button onClick={() => setShowPopup(true)} className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[14px] hover:bg-[#2a2466]">
                   <FaShoppingCart className="text-[12px]" /> Add to cart
                 </button>
                 <button className="flex-1 flex items-center justify-center gap-2 border border-gray-300 text-gray-700 py-2 rounded-md text-[14px] hover:bg-gray-100">
@@ -36,6 +40,8 @@ function BuyAgain() {
         ))}
       </div>
     </section>
+          {showPopup && <AddedToCartPopup onClose={() => setShowPopup(false)} />}
+    </>
   );
 }
 

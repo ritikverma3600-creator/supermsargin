@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "FaUmbrellaBeach",
+    "title": "PAID TIME OFF & VACATION",
+    "desc": "Paid time off & vacation options that support a healthy work/life balance. That is why we offer a generous paid time off program that is made flexible based on your personal needs.", 
+    "bg":"text-indigo-600"
+  },
+  {
+    "icon": "FaGraduationCap",
+    "title": "COMPREHENSIVE TRAINING",
+    "desc": "We want to put our employees in the best position possible to succeed. That's why as an employee at Supermargins, we will provide on-the-job training and mentoring programs to help keep your career on track.",
+    "bg":"text-green-600"
+  
+},
+  {
+    "icon": "FaHeartbeat",
+    "title": "HEALTH INSURANCE",
+    "desc": "We're invested in our associates' futures and one way we demonstrate that is by providing all regular full- and part-time associates' access to benefits to help them stay healthy - physically, mentally, and financially.", 
+    "bg":"text-gray-600"
+  
+},
+  {
+    "icon": "FaUserTag",
+    "title": "EMPLOYEE DISCOUNTS",
+    "desc": "As an employee of Supermargins, you will be eligible to receive a very generous discount on all the products we carry.",
+    "bg":"text-indigo-600"
+
+
+},
+  {
+    "icon": "FaHandshake",
+    "title": "401K Plan",
+    "desc": "Supermargins provides a retirement savings plan that allows you to save for your future while taking advantage of tax savings.",
+    "bg":"text-green-600"
+
+}
+]
+

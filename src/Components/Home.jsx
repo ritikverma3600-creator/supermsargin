@@ -13,9 +13,10 @@ function Home() {
 <BuyAgain/>
 <LiveDeals/>
 <PromoGrid/>
+</div>
 <Footer/>
 <Copyright/>
-</div>
+
 </>
   );
 }

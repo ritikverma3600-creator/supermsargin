@@ -57,7 +57,7 @@ function MyOrdersPage() {
             <input type="text" placeholder="Search your order here" className="flex-1 outline-none text-[14px] text-gray-600" />
             <FaSearch className="text-gray-400" />
           </div>
-          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[14px] font-medium hover:bg-[#2a2466] whitespace-nowrap">
+          <button className="cursor-pointer bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[14px] font-medium hover:bg-[#2a2466] whitespace-nowrap">
             Download Selected
           </button>
         </div>
@@ -107,7 +107,7 @@ function MyOrdersPage() {
                   </div>
                 </div>
                 <div>
-                  <button className="bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
+                  <button className="cursor-pointer bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
                     Shop from this order
                   </button>
                 </div>
@@ -117,7 +117,7 @@ function MyOrdersPage() {
                   <a href="#" className="text-[#1a1456] text-[12px] underline">e -Way Bill</a>
                 </div>
                 <div className="flex justify-end">
-                  <button className="bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
+                  <button className="cursor-pointer bg-[#1a1456] text-white text-[12px] px-4 py-2 rounded-md hover:bg-[#2a2466]">
                     Download Invoice
                   </button>
                 </div>

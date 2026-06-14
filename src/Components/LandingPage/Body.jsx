@@ -1,11 +1,14 @@
 import heroImage from "./../../assets/hero.png";
 import underlineImage from "./../../assets/underline.svg";
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
+import VideoModal from "../VideoModal";
 function Body() {
     const navigate = useNavigate();
+const [showVideo, setShowVideo] = useState(false);
 
   return (
+    <>
     <section className="pt-[136px] w-full flex items-center justify-between pl-12 py-5 bg-white ">
       
       {/* LEFT CONTENT */}
@@ -38,10 +41,10 @@ function Body() {
 
         {/* BUTTONS */}
         <div className="flex items-center gap-4 mt-2 cursor-pointer" >
-          <button onClick={() => navigate("/register")} className="bg-[#1a1456] text-white px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-[#2a2466]">
+          <button onClick={() => navigate("/register")} className="cursor-pointer bg-[#1a1456] text-white px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-[#2a2466]">
             Sign up to buy
           </button>
-          <button className="flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-gray-50">
+          <button onClick={() => setShowVideo(true)} className="cursor-pointer flex items-center gap-2 border border-gray-300 text-gray-700 px-8 py-3 rounded-sm text-[16px] font-medium hover:bg-gray-50">
             <span className="text-red-500 text-[20px]">▶</span>
             Watch Demo
           </button>
@@ -59,6 +62,13 @@ function Body() {
       </div>
 
     </section>
+    {showVideo && (
+  <VideoModal
+    onClose={() => setShowVideo(false)}
+    videoUrl="https://www.youtube.com/embed/eXMhSb4WqZM?autoplay=1"
+  />
+)}
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { FaShoppingCart, FaCommentDots, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight, FaBars } from "react-icons/fa";
+import { FaSlidersH, FaShoppingCart, FaCommentDots, FaChevronDown, FaChevronUp, FaChevronLeft, FaChevronRight, FaBars } from "react-icons/fa";
 import DashboardNav from "./DashboardNav";
+import AddedToCartPopup from "../Cart/AddedToCartPopup";
 
 const mainCategories = ["Apparel", "Home Decor", "Home Furnishing", "Kitchen & Dinings", "Storage", "Seasonal Gifts", "Furniture"];
 
@@ -66,12 +67,14 @@ function CategoryItems() {
   const [activeCategory, setActiveCategory] = useState("Apparel");
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 32;
+  const [showPopup, setShowPopup] = useState(false);
 
   return (
-    <div className="pt-[92px] w-full bg-[#eef2f7] min-h-screen">
+    <>
+    <div className="pt-[55px] md:pt-[92px] w-full bg-white  md:bg-[#eef2f7] min-h-screen">
 
       {/* CATEGORY TABS */}
-      <div className="fixed z-40 w-full bg-[#eef2f7]  px-6 lg:px-10 overflow-x-auto">
+      <div className="fixed z-40 w-full bg-white  md:bg-[#eef2f7] px-6 lg:px-10 overflow-x-auto no-scrollbar">
         <div className="flex justify-between flex-1 gap-2 py-2">
           {mainCategories.map((cat) => (
             <button
@@ -88,7 +91,9 @@ function CategoryItems() {
           ))}
         </div>
       </div>
-          <DashboardNav/>
+      <div className="hidden md:block">
+        <DashboardNav />
+
       {/* HERO BANNER */}
       <div className="relative mx-6 lg:mx-10 rounded-xl overflow-hidden h-48 bg-[#1a1456]">
         <img
@@ -107,13 +112,13 @@ function CategoryItems() {
         </div>
       </div>
 
-
+      </div>
 
       {/* MAIN CONTENT */}
-      <div className="flex bg-white gap-4 mx-6 lg:mx-10 pb-10">
+      <div className="flex bg-white gap-4 mx-6 lg:mx-10 pb-10 mt-15">
 
         {/* SIDEBAR */}
-        <div className="w-[280px] flex-shrink-0 bg-white rounded-xl p-4 self-start sticky top-24">
+        <div className="hidden md:block md-flex w-[280px] flex-shrink-0 bg-white rounded-xl p-4 self-start sticky top-24">
           <div className="border-l-4 border-[#1a1456] pl-3 mb-3">
             <span className="font-bold text-gray-700 text-[14px]">SHOP BY CATEGORY</span>
           </div>
@@ -137,7 +142,7 @@ function CategoryItems() {
           <FaChevronRight className="text-[12px]" />
           <span className="font-medium text-gray-700 border-b border-gray-400">Apparel</span>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="hidden md:block flex items-center gap-3">
           <span className="text-[14px] text-gray-600">Sort By</span>
           <select className="border border-gray-300 rounded-md px-3 py-2 text-[14px] outline-none text-gray-700">
             <option>Best Match</option>
@@ -146,6 +151,9 @@ function CategoryItems() {
             <option>Newest First</option>
           </select>
         </div>
+        <button className="flex items-center gap-1 text-[14px] text-gray-700">
+          <FaSlidersH  className="text-gray-500" />
+        </button>
       </div>
           {/* PRODUCT GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -160,7 +168,7 @@ function CategoryItems() {
                     <span className="text-gray-400 text-[12px]">{product.min}</span>
                   </div>
                   <div className="flex gap-2 mt-2">
-                    <button className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[14px] hover:bg-[#2a2466]">
+                    <button onClick={() => setShowPopup(true)} className="flex-1 flex items-center justify-center gap-2 bg-[#1a1456] text-white py-2 rounded-md text-[14px] hover:bg-[#2a2466]">
                       <FaShoppingCart className="text-[12px]" /> Add to cart
                     </button>
                     <button className="flex-1 flex items-center justify-center gap-2 border border-gray-300 text-gray-700 py-2 rounded-md text-[14px] hover:bg-gray-50">
@@ -222,6 +230,8 @@ function CategoryItems() {
         </div>
       </div>
     </div>
+          {showPopup && <AddedToCartPopup onClose={() => setShowPopup(false)} />}
+</>
   );
 }
 

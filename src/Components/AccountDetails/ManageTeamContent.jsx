@@ -48,8 +48,8 @@ function ManageTeamContent() {
                 <td className="px-4 py-4 text-gray-600">{member.role}</td>
                 <td className="px-4 py-4">
                   <div className="flex items-center gap-3">
-                    <button className="text-blue-500 hover:text-blue-700"><FaEdit /></button>
-                    <button onClick={() => deleteMember(member.id)} className="text-red-500 hover:text-red-700"><FaTrash /></button>
+                    <button className="cursor-pointer text-blue-500 hover:text-blue-700"><FaEdit /></button>
+                    <button onClick={() => deleteMember(member.id)} className="cursor-pointer text-red-500 hover:text-red-700"><FaTrash /></button>
                   </div>
                 </td>
               </tr>

@@ -1,11 +1,20 @@
 import Navbar from "./LandingPage/Navbar";
 import CategoryBar from "./LandingPage/CategoryBar";
+import MobileNav from "./LandingPage/MobileNav";
 function RequestQuotePage() {
   return (
     <>
-    <Navbar/>
+    <div className="hidden md:block">
+        <Navbar />
+      </div>
+
+      {/* Mobile navbar - hidden on medium+ screens */}
+      <div className="md:hidden">
+        <MobileNav />
+      </div>
+
     <CategoryBar/>
-    <div className="top-120 w-full bg-white min-h-screen px-6 lg:px-16 py-40">
+    <div className="top-120 w-full bg-white min-h-screen px-6 lg:px-16 py-18 md:py-40">
 
       {/* TITLE */}
       <h2 className="text-center font-bold text-gray-800 text-[20px] tracking-wide mb-10">
@@ -103,7 +112,7 @@ function RequestQuotePage() {
 
       {/* SUBMIT */}
       <div className="flex justify-center mt-10">
-        <button className="bg-[#1a1456] text-white px-10 py-3 rounded-md font-medium hover:bg-[#2a2466]">
+        <button className="cursor-pointer bg-[#1a1456] text-white px-10 py-3 rounded-md font-medium hover:bg-[#2a2466]">
           Submit Detail
         </button>
       </div>

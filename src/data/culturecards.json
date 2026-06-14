@@ -1,0 +1,22 @@
+ [
+    {
+      "title": "Company Values",
+      "desc": "Trust, learning, honesty, and co-operation are the pillars that sit at the core of what we do.",
+      "image": "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?w=300"
+    },
+    {
+      "title": "Friendly atmosphere",
+      "desc": "We hold a positive attitude in order to foster respect and decency for our entire team.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300"
+    },
+    {
+      "title": "Work-life balance",
+      "desc": "For us, a healthy personal life is just as important as the time you spend in the office.",
+      "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=300"
+    },
+    {
+      "title": "Everyday grow",
+      "desc": "We provide the necessary support to ensure your skills never stop growing.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300"
+    }
+  ]

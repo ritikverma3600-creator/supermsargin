@@ -65,8 +65,8 @@ function FAQItem({ question, answer }) {
       >
         <span className="font-semibold text-gray-800 text-[14px]">{question}</span>
         {open
-          ? <FaMinus className="text-blue-500 flex-shrink-0" />
-          : <FaPlus className="text-blue-500 flex-shrink-0" />
+          ? <FaMinus className="cursor-pointer text-blue-500 flex-shrink-0" />
+          : <FaPlus className="cursor-pointer text-blue-500 flex-shrink-0" />
         }
       </button>
       {open && (
@@ -146,10 +146,10 @@ function SupportPage() {
             Our dedicated support team is here to help you with any additional questions about our wholesale program, products, or services.
           </p>
           <div className="flex items-center justify-center gap-4 mt-2">
-            <button className="flex items-center gap-2 bg-white text-gray-800 px-6 py-3 rounded-md text-[14px] font-medium hover:bg-gray-100">
+            <button className="cursor-pointer flex items-center gap-2 bg-white text-gray-800 px-6 py-3 rounded-md text-[14px] font-medium hover:bg-gray-100">
               <FaHeadset /> Visit Help Center
             </button>
-            <button className="flex items-center gap-2 bg-white text-gray-800 px-6 py-3 rounded-md text-[14px] font-medium hover:bg-gray-100">
+            <button className="cursor-pointer flex items-center gap-2 bg-white text-gray-800 px-6 py-3 rounded-md text-[14px] font-medium hover:bg-gray-100">
               <FaEnvelope /> Contact Support
             </button>
           </div>

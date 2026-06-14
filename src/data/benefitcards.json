@@ -1,0 +1,10 @@
+[
+    { "icon": "FaHeart", "label": "Marriage bonus" },
+    { "icon": "FaCreditCard", "label": "Competitive salary" },
+    { "icon": "FaDumbbell", "label": "Sport compensation" },
+    { "icon": "FaRocket", "label": "Professional growth budget" },
+    { "icon": "FaGlassCheers", "label": "Fun team events" },
+    { "icon": "FaBirthdayCake", "label": "Birthdays celebration" },
+    { "icon": "FaShieldAlt", "label": "Health care Insurance" },
+    { "icon": "FaBullseye", "label": "Employee referral bonus" }
+  ]

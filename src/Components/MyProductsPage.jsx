@@ -30,7 +30,7 @@ function MyProductsPage() {
         {/* HEADER */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
           <h2 className="font-bold text-[#1a1456] text-[20px]">My Products</h2>
-          <button className="bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[14px] font-medium hover:bg-[#2a2466]">
+          <button className="cursor-pointer bg-[#1a1456] text-white px-6 py-2.5 rounded-md text-[14px] font-medium hover:bg-[#2a2466]">
             Move to cart
           </button>
         </div>
@@ -84,9 +84,9 @@ function MyProductsPage() {
                 <td className="px-4 py-4 text-gray-700">₹{product.price}.00</td>
                 <td className="px-4 py-4">
                   <div className="flex items-center gap-2">
-                    <button onClick={() => updateQty(product.id, -1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-[18px] hover:bg-[#2a2466]">−</button>
+                    <button onClick={() => updateQty(product.id, -1)} className="bg-[#1a1456] text-white w-7 h-7 rounded cursor-pointer flex items-center justify-center text-[18px] hover:bg-[#2a2466]">−</button>
                     <span className="w-10 text-center text-[14px] font-medium">{product.quantity}</span>
-                    <button onClick={() => updateQty(product.id, 1)} className="bg-[#1a1456] text-white w-7 h-7 rounded flex items-center justify-center text-[18px] hover:bg-[#2a2466]">+</button>
+                    <button onClick={() => updateQty(product.id, 1)} className="bg-[#1a1456] text-white w-7 h-7 rounded cursor-pointer flex items-center justify-center text-[18px] hover:bg-[#2a2466]">+</button>
                     <a href="#" className="text-[#1a1456] text-[12px] underline ml-1">View</a>
                   </div>
                 </td>

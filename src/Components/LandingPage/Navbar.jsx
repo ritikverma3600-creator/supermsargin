@@ -10,14 +10,15 @@ import { MdSupportAgent } from "react-icons/md";
 import { useState } from "react";
 import SignInModal from "./SignInModal";
 import { useNavigate } from "react-router-dom";
-
+import { FaShoppingCart, FaUserCircle } from "react-icons/fa";
+import { useAuth } from "./../../Context/AuthContext";
 function Navbar() {
   // inside your Nav component:
 
+  const { user, isLoggedIn, logout } = useAuth();
 
   const [showSignIn, setShowSignIn] = useState(false);
   const navigate = useNavigate();
-
   return (
     <>
 <nav className="fixed z-50 w-full bg-white px-12">
@@ -56,7 +57,7 @@ function Navbar() {
 
     {/* RIGHT SECTION */}
     <div className="hidden md:flex items-center gap-6">
-      <div className="flex items-center gap-2 cursor-pointer">
+            <div className="flex items-center gap-2 cursor-pointer">
         <img
           src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
           alt="India Flag"
@@ -65,6 +66,24 @@ function Navbar() {
         <span>English</span>
         <FaChevronDown className="text-[12px]" />
       </div>
+       {isLoggedIn ? (
+    <>
+      {/* CART */}
+      <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/cart")}>
+        <FaShoppingCart className="text-[20px] text-gray-700" />
+        <span className="text-[14px] font-medium text-gray-700">Cart</span>
+      </div>
+
+      {/* USER */}
+      <div className="flex items-center gap-2 cursor-pointer">
+        <FaUserCircle className="text-[24px] text-gray-700" />
+        <span className="text-[14px] font-medium text-gray-700">{user.name}</span>
+        <FaChevronDown className="text-[12px] text-gray-500" />
+      </div>
+    </>
+  ) : (
+    <>
+
       <div onClick={() => setShowSignIn(true)} className="flex items-center gap-2 cursor-pointer">
         <FaRegUserCircle className="text-[20px]" />
         <span>Sign In</span>
@@ -72,7 +91,10 @@ function Navbar() {
       <button className="bg-orange-400 hover:bg-orange-500 text-white px-5 py-2 rounded-md cursor-pointer" onClick={() => navigate("/register")}>
         Create Account
       </button>
+          </> 
+    )}
     </div>
+
 
   </div>
 </nav>

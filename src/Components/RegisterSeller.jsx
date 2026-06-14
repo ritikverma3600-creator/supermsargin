@@ -30,7 +30,7 @@ function FileInput({ label, required }) {
           {label}{required && <span className="text-red-500">*</span>}
         </span>
         <span className="text-gray-400 text-[14px]">No File Chosen</span>
-        <FaUpload className="text-[#1a1456]" />
+        <FaUpload className="cursor-pointer text-[#1a1456]" />
       </div>
       <p className="text-[12px] text-gray-400 mt-1">Max size 1MB pdf, jpg, jpeg, png</p>
     </div>
@@ -78,7 +78,7 @@ function RegisterSeller() {
               />
             ))}
           </div>
-          <button className="bg-[#1a1456] text-white py-3 rounded-md font-medium hover:bg-[#2a2466]">
+          <button className="cursor-pointer bg-[#1a1456] text-white py-3 rounded-md font-medium hover:bg-[#2a2466]">
             Register as a Seller
           </button>
         </div>
@@ -110,7 +110,7 @@ function RegisterSeller() {
               <FloatingInput label="Company / Business Name" required />
               <div className="relative border border-gray-300 rounded-md px-3 pt-4 pb-2">
                 <span className="absolute -top-2.5 left-3 bg-white text-[12px] text-gray-500 px-1">Legal Entity Type<span className="text-red-500">*</span></span>
-                <select className="w-full outline-none text-[14px] text-gray-700 bg-transparent">
+                <select className="cursor-pointer w-full outline-none text-[14px] text-gray-700 bg-transparent">
                   <option value="">Select</option>
                   <option>Proprietorship</option>
                   <option>Partnership</option>
@@ -152,7 +152,7 @@ function RegisterSeller() {
                 <div className="flex-1">
                   <FloatingInput label="Swift / IFSC" required />
                 </div>
-                <button className="bg-[#1a1456] text-white px-5 py-3 rounded-md text-[14px] font-medium hover:bg-[#2a2466] flex-shrink-0">
+                <button className="cursor-pointer bg-[#1a1456] text-white px-5 py-3 rounded-md text-[14px] font-medium hover:bg-[#2a2466] flex-shrink-0">
                   Verify
                 </button>
               </div>
@@ -207,10 +207,10 @@ function RegisterSeller() {
               <input type="checkbox" checked={agreed} onChange={() => setAgreed(!agreed)} className="w-4 h-4 accent-[#1a1456]" />
               I agree to the <a href="#" className="text-[#1a1456] underline">Terms & Conditions</a>
             </label>
-            <button className="w-full bg-[#1a1456] text-white py-3 rounded-md font-semibold hover:bg-[#2a2466]">
+            <button className="cursor-pointer w-full bg-[#1a1456] text-white py-3 rounded-md font-semibold hover:bg-[#2a2466]">
               Submit
             </button>
-            <button className="w-full border border-gray-300 text-gray-700 py-3 rounded-md font-medium hover:bg-gray-50">
+            <button className="cursor-pointer w-full border border-gray-300 text-gray-700 py-3 rounded-md font-medium hover:bg-gray-50">
               Cancel
             </button>
           </div>

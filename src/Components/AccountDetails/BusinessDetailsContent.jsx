@@ -60,7 +60,7 @@ function BusinessDetailsContent() {
 
       {/* UPDATE */}
       <div>
-        <button className="bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
+        <button className="cursor-pointer bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
           Update
         </button>
       </div>

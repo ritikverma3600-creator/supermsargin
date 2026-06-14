@@ -19,7 +19,7 @@ function SellerHero() {
         <p className="text-gray-600 text-[16px] leading-relaxed">
           India's trusted B2B marketplace connecting suppliers and buyers across the country. Grow your business with secure trade, real-time insights, and smooth opportunities to scale.
         </p>
-        <button className="flex items-center gap-2 bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466] w-fit">
+        <button className="cursor-pointer flex items-center gap-2 bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466] w-fit">
           Start Selling <FaArrowRight />
         </button>
       </div>
@@ -118,7 +118,7 @@ function HowItWorks() {
         ))}
       </div>
       <div className="flex justify-center">
-        <button className="flex items-center gap-2 bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
+        <button className="cursor-pointer flex items-center gap-2 bg-[#1a1456] text-white px-8 py-3 rounded-md font-medium hover:bg-[#2a2466]">
           Start Selling <FaArrowRight />
         </button>
       </div>
@@ -176,7 +176,7 @@ function SellerCta() {
         <p className="text-gray-200 text-[16px]">
           सुपरमार्जिन्स से जुड़ें और हज़ारों सफल विक्रेताओं की तरह अपने खरीदारों तक पहुँचें।
         </p>
-        <button className="bg-white text-gray-800 font-medium px-10 py-3 rounded-md hover:bg-gray-100">
+        <button className="cursor-pointer bg-white text-gray-800 font-medium px-10 py-3 rounded-md hover:bg-gray-100">
           अपना स्टोर शुरु करें
         </button>
       </div>

@@ -51,10 +51,10 @@ function ManageAddressesContent() {
 
           {/* ACTIONS */}
           <div className="absolute top-4 right-4 flex flex-col gap-2">
-            <button className="text-blue-500 hover:text-blue-700">
+            <button className="cursor-pointer text-blue-500 hover:text-blue-700">
               <FaEdit />
             </button>
-            <button onClick={() => deleteAddress(addr.id)} className="text-red-500 hover:text-red-700">
+            <button onClick={() => deleteAddress(addr.id)} className="cursor-pointer text-red-500 hover:text-red-700">
               <FaTrash />
             </button>
           </div>

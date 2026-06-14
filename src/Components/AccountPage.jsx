@@ -27,7 +27,7 @@ function AccountPage() {
 
   return (
     <>
-    <div className="mx-10 gap-2  w-full bg-[#eef2f7] min-h-screen flex">
+    <div className="mx-10 gap-2  w-full bg-[#eef2f7] min-h-screen flex pb-20">
 
       {/* SIDEBAR */}
       <div className="w-[300px] flex-shrink-0 bg-white border-r border-gray-200">
